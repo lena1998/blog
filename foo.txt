@@ -1,2 +1,3 @@
-foobar
-Yvonne
+https://www.weltenbummlermag.de/#
+
+JQuery und Bootstrap importieren! NICHT VERGESSEN!!!!!
