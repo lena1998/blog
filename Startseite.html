@@ -1,0 +1,177 @@
+<!DOCTYPE>
+<html lang="de">
+<head>
+
+	<title> Reiseblog </title>
+	<link rel="shortcut icon" type="image/x-icon" href="Bilder/icon.png" />
+	
+	<link rel="stylesheet" href="stylesheet.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="responsiveslides.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$(".rslides").responsiveSlides();
+			
+		$(".hidden").hide();
+		$(".show").html("show ....");
+ 
+		$(".show").click(function() {
+			if (this.className.indexOf('clicked') != -1 ) {
+				$(this).prev().slideUp(500);
+				$(this).removeClass('clicked')
+				$(this).html("show ....");
+			}
+			else {
+				$(this).addClass('clicked')
+				$(this).prev().slideDown(500);
+				$(this).html("... hide");
+			}
+		});
+	});
+	</script>
+</head>
+	
+<body>
+	<div id="middle">
+		<!-- #ANFANG DIASHOW -->
+		<header>
+			<ul class="rslides">
+				<li><img src="Bilder/img2.jpg" alt=""></li>
+				<li><img src="Bilder/img3.jpg" alt=""></li>
+				<li><img src="Bilder/img4.jpg" alt=""></li>
+				<li><img src="Bilder/img5.jpg" alt=""></li>
+				<li><img src="Bilder/img6.jpg" alt=""></li>
+			</ul> 
+			<!-- Blogtitel -->
+			<div id="titleBlog">Reiseblog</div>
+		</header>
+		<!-- #ENDE DIASHOW -->
+		<!-- #ANFANG EINTRAG 1 -->
+		<article class=vorschau>
+			<!-- Überschrift -->
+			<div id="vDiv1">
+				<h1>Alleine Reisen: Die 6 ultimativen Tipps für Neulinge!</h1>
+				<h2> Um die Angst zu nehmen <br> 
+				27.März 2018 von Lena & Yvonne</h2>	
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag1.jpg">
+				<p class=mittig>Die Sorge, ob Du wirklich das allererste Mal alleine reisen kannst, ist groß. Und lass dir von niemandem einreden, für sie sei der erste Urlaub alleine kein Problem gewesen. Jede/r hat zumindest 
+				mal einen Moment lang kalte Füße davor bekommen, das garantieren wir Dir.</p>
+				<div class=hidden>
+					<h3 class=headline> Was, wenn Du niemanden kennenlernst und ganz allein bist? </h3>
+						<p>Was, wenn unvorhergesehene Probleme auftreten und Du niemanden fragen kannst? Dein Rucksack, Deine Wertsachen oder Dein Reisepass geklaut wird? Was, wenn Du furchtbares Heimweh hast und Deine Reise
+						abbrechen willst? <br>
+						Zu all diesen Fragen gibt es passende Antworten, und niemand wurde zum Alleine-Reisen geboren, auch wenn Dir das auf den vielen Reiseblogs vielleicht so erscheinen mag.<br>
+						Wir alle haben mal klein angefangen, und ich zeige Dir heute, wie Du den leichtesten Einstieg findest, um alleine reisen zu können:</p>
+					<h3 class=headline> 1. Such Dir ein tolles Ziel aus für deinen Urlaub alleine! </h3>
+						<p>Klar, denkst Du jetzt, was sonst?!<br><br>
+						Aber damit meine ich nicht nur einen wunderschönen Ort mit tollen Sehenswürdigkeiten. <br><br>
+						Sondern ein Reiseziel, das es Dir einfach macht, das Alleine-Reisen auch wirklich zu genießen. Das touristisch gut angebunden ist und organisatorisch vielleicht in unseren europäischen Standards entspricht.<br><br>
+						Als Reise-Neuling in den tiefsten Busch zu fahren, wo es keine Handy-Netzabdeckung gibt und Supermärkte nur das Nötigste anbieten, ist vielleicht nicht ganz ideal. <br><br>
+						Wenn Du die Hürde der ersten Reise genommen hast, das Alleinreisen einmal getestet hast und mit einem Erfolgserlebnis zurückkommst (und das wirst Du), kannst Du Dich immer noch an anspruchsvollere Ziele wagen. 
+						</p>
+					<h3 class=headline> 2. Wähle ein Land, in dem Englisch eine gängige Sprache ist! </h3>
+						<p>Es ist schwer genug, zum ersten Mal komplett auf seine Muttersprache verzichten zu müssen. <br><br>
+						Wenn Du Dich dann auch noch auf eine völlig neue Sprache einstellen musst, wird es richtig anstrengend. Und genau so hast Du Dir Deine erste Reise ja bestimmt nicht vorgestellt: anstrengend! <br><br>
+						Es gibt genügend englischsprachige Länder, die eine Reise wert sind, wo das Alleine-Reisen einfach ist und Dir unglaublich schöne Erfahrungen bietet. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag1Bild1.jpg"><br>
+						Neuseeland, aber auch Irland und Großbritannien (nicht immer musst Du sofort um die halbe Welt alleine reisen) sind nur einige wunderbare Ziele für das erste Mal alleine reisen.</p>
+					<h3 class=headline> 3. Plan Dir bei Deinem ersten Urlaub alleine die ersten Tage durch! </h3>
+						<p>Ich sage nicht, dass Du Deine gesamte Reise bis ins Detail durchstrukturieren sollst, denn wer weiß, vielleicht bist Du die geborene Reisende und nach den ersten Tagen on the road lieber spontan und ungebunden. <br><br>
+						Aber es kann Dir helfen, die ersten Tage einfach nichts mehr planen zu müssen und das Land und die Menschen einfach nur auf Dich wirken zu lassen. Das Alleine-Reisen ist dann bereits genug Herausforderung <br><br>
+						Buch Dir eine schöne Unterkunft für die ersten Nächte, finde heraus, wie Du vom Flughafen dorthin kommst, und dann lass Dich ein bisschen mitreißen von dem, was Du dort vorfindest. <br>
+						Wenn Du sehr unsicher bist, buch Deine Unterkünfte für die erste Woche fest ein. Dann kannst Du immer noch vor Ort weiter planen. </p>
+					<h3 class=headline> 4. Alleine reisen in einer Großstadt! </h3>
+						<p>Wo ist es einfacher, zurechtzukommen, als in einer Stadt voller Menschen und wo wirst Du mehr geboten bekommen? <br><br>
+						Meine ersten Trips, als ich das Alleinreisen für mich testete, waren kurze Städtetrips. <br><br>
+						Dabei kannst Du ganz locker das Alleine-Reisen beschnuppern und bist nach ein paar Tagen schon wieder zu Hause. Ideal, um das Wasser im riesigen Pool der Möglichkeiten zu testen. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag1Bild2.jpg"><br>
+						Schnapp Dir einen Stadtführer und erkunde die Stadt auf eigene Faust. Möchtest Du lieber schon mal lernen, wie Du alleine reisen und unterwegs Menschen kennenlernen kannst, dann melde Dich bei Couchsurfing an. <br><br>
+						In ganz vielen Städten finden darüber einfach nur Treffen der Reisenden statt, die sich zusammenschließen und Unternehmungen planen. <br><br>
+						Auch Deine Unterkunft über Airbnb in einer netten WG zu buchen, kann helfen, dass Du Dich beim Alleine-Reisen trotzdem nicht einsam fühlst. </p>
+					<h3 class=headline> 5. Allein reisen, um etwas Neues zu lernen! </h3>
+						<p>Hast Du schon mal daran gedacht, einen Urlaub alleine zu planen, um etwas völlig Neues zu lernen? Natürlich gäbe es da allein schon die Möglichkeit des Sprachkurses, aber wie wäre es mal mit
+						Surfstunden, Kletterurlaub oder Kochkurs? <br><br>
+						In so vielen Ländern dieser Welt kannst Du alleine reisen und nebenbei unglaublich coole Dinge lernen. Und lernst dabei schon automatisch andere Reisende kennen! <br><br>
+						Oder lern unterwegs eine neue Fähigkeit! Lern zum Beispiel Deine Kamera mit einem Fotografie Kurs richtig kennen und bring die schönsten Erinnerungsfotos mit nach Hause. </p>
+					<h3 class=headline> 6. Schließ Dich bei Deinem ersten Urlaub alleine einer Gruppenreise an!</h3>
+						<p>Immer noch zu schüchtern für das Alleinreisen oder den ersten Urlaub alleine? <br><br>
+						Was spricht denn dann dagegen, einen Urlaub alleine komplett über eine Gruppenreise zu buchen? <br><br>
+						So kannst Du zumindest Deine Eigenschaften im Kontakte-Knüpfen verbessern und Deine Wunschziele auch dann endlich in Angriff nehmen, wenn eben niemand Deiner Freunde Lust oder Zeit hat <br><br>
+						Eine Bekannte reist regelmäßig allein, da ihr Mann ihre Reiseleidenschaft nicht teilt. Sie hat sogar Japan mal für drei Wochen mit einer Gruppe bereist und kam schwärmend und begeistert zurück!</p>
+				</div>
+				<i class="show"></i>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 1 -->
+		<!-- ANFANG EINTRAG 2-->
+		<article class=vorschau id="C2">
+			<div id="vDiv1">
+				<!-- Überschrift -->
+				<h1>Als alleinreisende Frau: Wohin kannst Du sicher & angenehm reisen?</h1>
+				<h2> Für eine unbeschwerte Reise <br>
+				25.März 2018 von Lena & Yvonne</h2>
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag2.jpg">
+				<p class=mittig>Als ich angefangen habe zu reisen, und auch noch nach meiner ersten Langzeitreise, habe ich mich immer wieder Folgendes gefragt: Als alleinreisende Frau, wohin kann ich sicher und 
+				unbeschwert reisen? Dabei war "sicher" für mich auch oft ein Synonym für unbeschwert und angenehm. Ich bin der Meinung, dass es in den meisten gängigen Reiseländern sicher ist zu reisen, aber ist es 
+				deshalb auch angenehm für eine Frau alleine?</p>
+				<div class="hidden">
+					<p>Ich habe schon einmal darüber geschrieben, wie es als Frau auf Reisen sein kann. Etwas, das viele männliche Reisende nicht nachvollziehen können. Die Blicke, die anzüglichen Bemerkungen, die Musterungen...
+					all das macht es für eine Frau nicht unsicherer, aber je nach Typ und je nachdem wie leicht das an Dir abprallt, eben unangenehm. <br><br>
+					Deshalb habe ich heute mal, neben meiner Gesamtübersicht der Länder, passend für Dein Reisebudget hier meine Top 3 Reiseziele ausgepackt, die geeignet für Deinen Mut und meiner Meinung nach ideal für alleinreisende 
+					Frauen (und vor allem Anfängerinnen) sind!<br>
+					<h3 class=headline> Platz 3: Europäische Länder wie Irland, Großbritannien, Frankreich, Spanien, Italien und natürlich Deutschland! </h3>
+						<p> Wenn Du noch ganz am Beginn Deiner Reisekarriere stehst, ist es vielleicht gar nicht so verkehrt, in der näheren Umgebung zu starten. Es mag vielleicht nicht so exotisch sein, Europa zu bereisen, aber in jedem Fall 
+						genauso sicher wie zu Hause und mit deutlich weniger Kulturschock-Gefahr.<br> <br>
+						Dann suche ich mir gerne über Booking.com auf Basis der tollsten Bewertungen eine kuschelige Unterkunft und lasse es mir einfach gut gehen. Letztendlich geht es auf Reisen ein gutes Stück weit auch einfach darum, 
+						sich wohlzufühlen.<br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild1.jpg"><br>
+						Das Alleinreisen als Frau verlangt Dir anfangs einiges ab. Je schüchterner und unsicherer Du bist, desto mehr. Du musst lernen, mit Dir alleine klarzukommen, Dein Selbstbewusstsein auszubauen und auf Menschen 
+						zuzugehen.<br><br>
+						Du musst Deine Planung selbst übernehmen, grübelst über Deine Wertsachen oder schlaue Geldverstecke, welche Kreditkarte Du nutzen solltest und wie sicher das Reisen alleine eigentlich ist. Glaub mir, damit bist Du 
+						fürs Erste gut beschäftigt!<br><br>
+						Damit Dich nicht auch noch all die neuen Eindrücke überschwemmen, lohnt es sich vielleicht, ein Land auszuwählen, in dem Du zumindest die Kultur größtenteils verstehst und kennst. Die Sprache allein 
+						wird schon Abenteuer genug sein. <br><br>
+						Eine gute Ecke, um auszutesten, ob Du für das Alleine-Reisen als Frau geschaffen bist (ja, das bist Du!) und um mal langsam die Fühler auszustrecken… <br><br>
+						</p>
+					<h3 class=headline>Platz 2: Südostasiatische Länder wie Thailand und Bali in Indonesien</h3>
+						<p>In Südostasien gibt es alle Varianten des exotischen Reisens und sämtliche Stufen vom Beginner-Status bis zum Fortgeschrittenen. <br><br>
+						Ecken wie Thailand und Bali machen es einer Asien-Beginnerin und alleinreisenden Frau allerdings leicht: Tourismus gehört hier zum Alltag, die Menschen sind auf Touristen und Reisende 
+						eingestellt, und es gibt massenweise Alleinreisende, mit denen Du Dich zusammenschließen und gemeinsam weiterreisen kannst. <br><br>
+						Als ich das erste Mal nach Bali gereist bin, hat mir ein Freund zuvor gesagt, Bali sei nicht wirklich Asien, es wäre eher „der verlängerte Arm von Australien“.<br><br>
+						Er hat damit nicht den Schwarm an australischen Touristen gemeint, obwohl das absolut zutrifft. Er meinte, dass Bali fast schon westlich ausgelegt ist. <br><br>
+						Das, und die Tatsache, dass Bali die einzige hinduistische Insel in ganz Indonesien ist, macht es für alleinreisende Frauen besonders anziehend. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild2.jpg"><br>
+						Hier kannst Du bedenkenlos Trägershirts und Röcke tragen, ohne Dir Gedanken machen zu müssen, und in Kuta in die Disco zu gehen, ist sogar alleine bedenkenlos möglich. Zumal 
+						Du sowieso zu 80% von anderen Reisenden umgeben sein wirst. <br><br>
+						Ähnlich ist es in Thailand, dem touristischsten Land Südostasiens.
+						Als buddhistisches Land ist auch hier, abgesehen von Tempeln und heiligen Stätten, Dein Outfit kein besonders großes Thema, und die Thais sind im Umgang mit alleinreisenden 
+						Frauen auch sehr weltoffen.
+						</p>
+					<h3 class=headline>Platz 1: Australien</h3>
+						<p>In meinen Augen und aus meiner Erfahrung gibt es kein idealeres Reiseziel für eine alleine reisende Frau! Australien war mein erstes Reiseziel für eine Langzeitreise, 
+						und ich hätte es nicht besser treffen können, aus so vielen Gründen. <br><br>
+						Natürlich absolut westlich, ohne prägnante Religionskultur und so modern eingestellt (mal von der Aborigine-Problematik abgesehen) wie jedes europäische Land, kannst Du Dich 
+						nirgendwo schneller einleben. <br><br>
+						Dazu hilft es wahrscheinlich sehr, dass jährlich über 2 Millionen Deutsche nach Australien reisen: Eine alleinreisende Frau bleibt hier nicht lange alleine! <br><br>
+						Aber was es am attraktivsten für mich gemacht hat, war die unglaubliche Natur, die so herrlich einfach zu bereisen ist! Es gibt Buspässe, Zugpässe, billige Inlandflüge, 
+						Mitfahrgelegenheiten, billige Camper-Vans und Hostels an jeder Ecke. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild3.jpg"><br>
+						Als jemand, der schüchtern und zitternd losgereist ist, lass Dir von mir sagen: Nirgendwo sonst wirst Du beides schneller los, als Du „Australien“ sagen kannst! <br><br>
+						Die Reiseplanung und -durchführung wird Dir hier fast abgenommen, so viele Möglichkeiten gibt es. Du musst Dich nur noch entscheiden, welche Ecken Du zuerst erobern willst! <br><br>
+						Es gibt noch weitaus mehr Länder, auf die die Kriterien, die ich anfangs beschrieben habe, zutreffen, aber ich habe mich hier auf die bezogen, von denen ich aus eigener Erfahrung sprechen kann.
+						</p>
+				</div>
+				<i class="show"></i>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 2 -->
+</body>
+</html>
