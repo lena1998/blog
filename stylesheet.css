@@ -1,0 +1,163 @@
+body{
+	background-color: #f0f8ff; 
+	font-family: "Century Gothic"; 
+}
+  
+header{
+	position: relative;
+	margin-left: auto !important;
+	margin-right: auto !important; 
+	width: 100%;
+	height: 45%;
+}
+
+header ul {
+	position: relative; 
+	margin-left: auto !important; 
+	margin-right: auto !important; 
+	background-color: black; 
+	width: 100%;
+}
+  
+h1  {
+	font-size: 1.8vw;
+	text-align: left; 
+	font-family: "Century Gothic";
+}
+  
+h2 {
+	font-size: 1vw; 
+	text-align: left; 
+	font-family: "Century Gothic";
+    font-style: italic;
+	font-weight: 300;
+}
+  
+h3 {
+	font-size: 1.1vw;
+	text-align: left; 
+}  
+
+h3.headline{
+	color: #f5a9a9; 
+	font-weight: 300; 
+}
+
+p {
+	font-weight: 100; 
+	font-size: 1vw;  
+	font-family: "Century Gothic";
+	line-height: 1.6; 
+	text-align: left; 
+}	
+ 
+p.mittig::first-letter {
+    line-height: 2.0em;
+    margin: -0.5em 0;
+	color: black;
+    font-size: 300%;
+    font-weight: bold;           
+    float: left;
+}
+
+/* Klassen */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: 100%;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+ 
+.vorschau{
+	width: 100%;
+	background-size: contain; 
+	z-index: 11; 
+	background-color: white; 
+	min-height: 80%;
+}
+
+.bild {
+	width: 100%;
+	height: auto;
+}
+
+.eintragBild{
+	width: 100%; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* ID's */
+  
+#middle {
+	position:relative;		
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-size: contain;
+	background-color: white;
+	text-align: center;
+	z-index:2;
+	overflow: hidden;
+}
+  
+#titleBlog {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 11;
+	margin-top: -20%;
+	font-size: 5.5vw;
+	color:white;
+	text-shadow: 0px 0px 5px black;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+  
+#vDiv1{
+  	position:relative;
+	margin-top: 3%;
+	margin-left: 5%;
+	width: 30%; 
+	float: left; 
+	background-color: white; 
+	min-height: 80%;
+	z-index: 12; 
+}
+  
+#vDiv2{
+  	position:relative;
+	margin-right: 5%;
+	margin-top: 3%;
+	width: 60%; 
+	float: left; 
+	background-color: white; 
+	min-height: 80%;
+	z-index: 12; 
+}
