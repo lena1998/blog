@@ -1,0 +1,523 @@
+<!DOCTYPE>
+<html lang="de">
+<head>
+
+	<title> Reiseblog </title>
+	<link rel="shortcut icon" type="image/x-icon" href="Bilder/icon.png" />
+	
+	<link rel="stylesheet" href="stylesheet.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="responsiveslides.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$(".rslides").responsiveSlides();
+			
+		$(".hidden").hide();
+		$(".show").html("show ....");
+ 
+		$(".show").click(function() {
+			if (this.className.indexOf('clicked') != -1 ) {
+				$(this).prev().slideUp(500);
+				$(this).removeClass('clicked')
+				$(this).html("show ....");
+			}
+			else {
+				$(this).addClass('clicked')
+				$(this).prev().slideDown(500);
+				$(this).html("... hide");
+			}
+		});
+	});
+	</script>
+</head>
+	
+<body>
+	<div id="middle">
+		<!-- #ANFANG DIASHOW -->
+		<header>
+			<ul class="rslides">
+				<li><img src="Bilder/img2.jpg" alt=""></li>
+				<li><img src="Bilder/img3.jpg" alt=""></li>
+				<li><img src="Bilder/img4.jpg" alt=""></li>
+				<li><img src="Bilder/img5.jpg" alt=""></li>
+				<li><img src="Bilder/img6.jpg" alt=""></li>
+			</ul> 
+			<!-- Blogtitel -->
+			<div id="titleBlog">Reiseblog</div>
+		</header>
+		<!-- #ENDE DIASHOW -->
+		<!-- #ANFANG EINTRAG 1 -->
+		<article class=vorschau>
+			<!-- Überschrift -->
+			<div id="vDiv1">
+				<h1>Alleine Reisen: Die 6 ultimativen Tipps für Neulinge!</h1>
+				<h2> Um die Angst zu nehmen <br> 
+				27.März 2018 von Lena & Yvonne</h2>	
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag1.jpg">
+				<p class=mittig>Die Sorge, ob Du wirklich das allererste Mal alleine reisen kannst, ist groß. Und lass dir von niemandem einreden, für sie sei der erste Urlaub alleine kein Problem gewesen. Jede/r hat zumindest 
+				mal einen Moment lang kalte Füße davor bekommen, das garantieren wir Dir.</p>
+				<div class=hidden>
+					<h3 class=headline> Was, wenn Du niemanden kennenlernst und ganz allein bist? </h3>
+						<p>Was, wenn unvorhergesehene Probleme auftreten und Du niemanden fragen kannst? Dein Rucksack, Deine Wertsachen oder Dein Reisepass geklaut wird? Was, wenn Du furchtbares Heimweh hast und Deine Reise
+						abbrechen willst? <br>
+						Zu all diesen Fragen gibt es passende Antworten, und niemand wurde zum Alleine-Reisen geboren, auch wenn Dir das auf den vielen Reiseblogs vielleicht so erscheinen mag.<br>
+						Wir alle haben mal klein angefangen, und ich zeige Dir heute, wie Du den leichtesten Einstieg findest, um alleine reisen zu können:</p>
+					<h3 class=headline> 1. Such Dir ein tolles Ziel aus für deinen Urlaub alleine! </h3>
+						<p>Klar, denkst Du jetzt, was sonst?!<br><br>
+						Aber damit meine ich nicht nur einen wunderschönen Ort mit tollen Sehenswürdigkeiten. <br><br>
+						Sondern ein Reiseziel, das es Dir einfach macht, das Alleine-Reisen auch wirklich zu genießen. Das touristisch gut angebunden ist und organisatorisch vielleicht in unseren europäischen Standards entspricht.<br><br>
+						Als Reise-Neuling in den tiefsten Busch zu fahren, wo es keine Handy-Netzabdeckung gibt und Supermärkte nur das Nötigste anbieten, ist vielleicht nicht ganz ideal. <br><br>
+						Wenn Du die Hürde der ersten Reise genommen hast, das Alleinreisen einmal getestet hast und mit einem Erfolgserlebnis zurückkommst (und das wirst Du), kannst Du Dich immer noch an anspruchsvollere Ziele wagen. 
+						</p>
+					<h3 class=headline> 2. Wähle ein Land, in dem Englisch eine gängige Sprache ist! </h3>
+						<p>Es ist schwer genug, zum ersten Mal komplett auf seine Muttersprache verzichten zu müssen. <br><br>
+						Wenn Du Dich dann auch noch auf eine völlig neue Sprache einstellen musst, wird es richtig anstrengend. Und genau so hast Du Dir Deine erste Reise ja bestimmt nicht vorgestellt: anstrengend! <br><br>
+						Es gibt genügend englischsprachige Länder, die eine Reise wert sind, wo das Alleine-Reisen einfach ist und Dir unglaublich schöne Erfahrungen bietet. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag1Bild1.jpg"><br>
+						Neuseeland, aber auch Irland und Großbritannien (nicht immer musst Du sofort um die halbe Welt alleine reisen) sind nur einige wunderbare Ziele für das erste Mal alleine reisen.</p>
+					<h3 class=headline> 3. Plan Dir bei Deinem ersten Urlaub alleine die ersten Tage durch! </h3>
+						<p>Ich sage nicht, dass Du Deine gesamte Reise bis ins Detail durchstrukturieren sollst, denn wer weiß, vielleicht bist Du die geborene Reisende und nach den ersten Tagen on the road lieber spontan und ungebunden. <br><br>
+						Aber es kann Dir helfen, die ersten Tage einfach nichts mehr planen zu müssen und das Land und die Menschen einfach nur auf Dich wirken zu lassen. Das Alleine-Reisen ist dann bereits genug Herausforderung <br><br>
+						Buch Dir eine schöne Unterkunft für die ersten Nächte, finde heraus, wie Du vom Flughafen dorthin kommst, und dann lass Dich ein bisschen mitreißen von dem, was Du dort vorfindest. <br>
+						Wenn Du sehr unsicher bist, buch Deine Unterkünfte für die erste Woche fest ein. Dann kannst Du immer noch vor Ort weiter planen. </p>
+					<h3 class=headline> 4. Alleine reisen in einer Großstadt! </h3>
+						<p>Wo ist es einfacher, zurechtzukommen, als in einer Stadt voller Menschen und wo wirst Du mehr geboten bekommen? <br><br>
+						Meine ersten Trips, als ich das Alleinreisen für mich testete, waren kurze Städtetrips. <br><br>
+						Dabei kannst Du ganz locker das Alleine-Reisen beschnuppern und bist nach ein paar Tagen schon wieder zu Hause. Ideal, um das Wasser im riesigen Pool der Möglichkeiten zu testen. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag1Bild2.jpg"><br>
+						Schnapp Dir einen Stadtführer und erkunde die Stadt auf eigene Faust. Möchtest Du lieber schon mal lernen, wie Du alleine reisen und unterwegs Menschen kennenlernen kannst, dann melde Dich bei Couchsurfing an. <br><br>
+						In ganz vielen Städten finden darüber einfach nur Treffen der Reisenden statt, die sich zusammenschließen und Unternehmungen planen. <br><br>
+						Auch Deine Unterkunft über Airbnb in einer netten WG zu buchen, kann helfen, dass Du Dich beim Alleine-Reisen trotzdem nicht einsam fühlst. </p>
+					<h3 class=headline> 5. Allein reisen, um etwas Neues zu lernen! </h3>
+						<p>Hast Du schon mal daran gedacht, einen Urlaub alleine zu planen, um etwas völlig Neues zu lernen? Natürlich gäbe es da allein schon die Möglichkeit des Sprachkurses, aber wie wäre es mal mit
+						Surfstunden, Kletterurlaub oder Kochkurs? <br><br>
+						In so vielen Ländern dieser Welt kannst Du alleine reisen und nebenbei unglaublich coole Dinge lernen. Und lernst dabei schon automatisch andere Reisende kennen! <br><br>
+						Oder lern unterwegs eine neue Fähigkeit! Lern zum Beispiel Deine Kamera mit einem Fotografie Kurs richtig kennen und bring die schönsten Erinnerungsfotos mit nach Hause. </p>
+					<h3 class=headline> 6. Schließ Dich bei Deinem ersten Urlaub alleine einer Gruppenreise an!</h3>
+						<p>Immer noch zu schüchtern für das Alleinreisen oder den ersten Urlaub alleine? <br><br>
+						Was spricht denn dann dagegen, einen Urlaub alleine komplett über eine Gruppenreise zu buchen? <br><br>
+						So kannst Du zumindest Deine Eigenschaften im Kontakte-Knüpfen verbessern und Deine Wunschziele auch dann endlich in Angriff nehmen, wenn eben niemand Deiner Freunde Lust oder Zeit hat <br><br>
+						Eine Bekannte reist regelmäßig allein, da ihr Mann ihre Reiseleidenschaft nicht teilt. Sie hat sogar Japan mal für drei Wochen mit einer Gruppe bereist und kam schwärmend und begeistert zurück!</p>
+				</div>
+				<i class="show"></i>
+				<!-- Trennlinie zwischen den Einträgen -->
+				<div id="trennlinie">&nbsp;</div>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 1 -->
+		<!-- ANFANG EINTRAG 2-->
+		<article class=vorschau id="C2">
+			<div id="vDiv1">
+				<!-- Überschrift -->
+				<h1>Als alleinreisende Frau: Wohin kannst Du sicher & angenehm reisen?</h1>
+				<h2> Für eine unbeschwerte Reise <br>
+				25.März 2018 von Lena & Yvonne</h2>
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag2.jpg">
+				<p class=mittig>Als ich angefangen habe zu reisen, und auch noch nach meiner ersten Langzeitreise, habe ich mich immer wieder Folgendes gefragt: Als alleinreisende Frau, wohin kann ich sicher und 
+				unbeschwert reisen? Dabei war "sicher" für mich auch oft ein Synonym für unbeschwert und angenehm. Ich bin der Meinung, dass es in den meisten gängigen Reiseländern sicher ist zu reisen, aber ist es 
+				deshalb auch angenehm für eine Frau alleine?</p>
+				<div class="hidden">
+					<p>Ich habe schon einmal darüber geschrieben, wie es als Frau auf Reisen sein kann. Etwas, das viele männliche Reisende nicht nachvollziehen können. Die Blicke, die anzüglichen Bemerkungen, die Musterungen...
+					all das macht es für eine Frau nicht unsicherer, aber je nach Typ und je nachdem wie leicht das an Dir abprallt, eben unangenehm. <br><br>
+					Deshalb habe ich heute mal, neben meiner Gesamtübersicht der Länder, passend für Dein Reisebudget hier meine Top 3 Reiseziele ausgepackt, die geeignet für Deinen Mut und meiner Meinung nach ideal für alleinreisende 
+					Frauen (und vor allem Anfängerinnen) sind!<br>
+					<h3 class=headline> Platz 3: Europäische Länder wie Irland, Großbritannien, Frankreich, Spanien, Italien und natürlich Deutschland! </h3>
+						<p> Wenn Du noch ganz am Beginn Deiner Reisekarriere stehst, ist es vielleicht gar nicht so verkehrt, in der näheren Umgebung zu starten. Es mag vielleicht nicht so exotisch sein, Europa zu bereisen, aber in jedem Fall 
+						genauso sicher wie zu Hause und mit deutlich weniger Kulturschock-Gefahr.<br> <br>
+						Dann suche ich mir gerne über Booking.com auf Basis der tollsten Bewertungen eine kuschelige Unterkunft und lasse es mir einfach gut gehen. Letztendlich geht es auf Reisen ein gutes Stück weit auch einfach darum, 
+						sich wohlzufühlen.<br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild1.jpg"><br>
+						Das Alleinreisen als Frau verlangt Dir anfangs einiges ab. Je schüchterner und unsicherer Du bist, desto mehr. Du musst lernen, mit Dir alleine klarzukommen, Dein Selbstbewusstsein auszubauen und auf Menschen 
+						zuzugehen.<br><br>
+						Du musst Deine Planung selbst übernehmen, grübelst über Deine Wertsachen oder schlaue Geldverstecke, welche Kreditkarte Du nutzen solltest und wie sicher das Reisen alleine eigentlich ist. Glaub mir, damit bist Du 
+						fürs Erste gut beschäftigt!<br><br>
+						Damit Dich nicht auch noch all die neuen Eindrücke überschwemmen, lohnt es sich vielleicht, ein Land auszuwählen, in dem Du zumindest die Kultur größtenteils verstehst und kennst. Die Sprache allein 
+						wird schon Abenteuer genug sein. <br><br>
+						Eine gute Ecke, um auszutesten, ob Du für das Alleine-Reisen als Frau geschaffen bist (ja, das bist Du!) und um mal langsam die Fühler auszustrecken… <br><br>
+						</p>
+					<h3 class=headline>Platz 2: Südostasiatische Länder wie Thailand und Bali in Indonesien</h3>
+						<p>In Südostasien gibt es alle Varianten des exotischen Reisens und sämtliche Stufen vom Beginner-Status bis zum Fortgeschrittenen. <br><br>
+						Ecken wie Thailand und Bali machen es einer Asien-Beginnerin und alleinreisenden Frau allerdings leicht: Tourismus gehört hier zum Alltag, die Menschen sind auf Touristen und Reisende 
+						eingestellt, und es gibt massenweise Alleinreisende, mit denen Du Dich zusammenschließen und gemeinsam weiterreisen kannst. <br><br>
+						Als ich das erste Mal nach Bali gereist bin, hat mir ein Freund zuvor gesagt, Bali sei nicht wirklich Asien, es wäre eher „der verlängerte Arm von Australien“.<br><br>
+						Er hat damit nicht den Schwarm an australischen Touristen gemeint, obwohl das absolut zutrifft. Er meinte, dass Bali fast schon westlich ausgelegt ist. <br><br>
+						Das, und die Tatsache, dass Bali die einzige hinduistische Insel in ganz Indonesien ist, macht es für alleinreisende Frauen besonders anziehend. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild2.jpg"><br>
+						Hier kannst Du bedenkenlos Trägershirts und Röcke tragen, ohne Dir Gedanken machen zu müssen, und in Kuta in die Disco zu gehen, ist sogar alleine bedenkenlos möglich. Zumal 
+						Du sowieso zu 80% von anderen Reisenden umgeben sein wirst. <br><br>
+						Ähnlich ist es in Thailand, dem touristischsten Land Südostasiens.
+						Als buddhistisches Land ist auch hier, abgesehen von Tempeln und heiligen Stätten, Dein Outfit kein besonders großes Thema, und die Thais sind im Umgang mit alleinreisenden 
+						Frauen auch sehr weltoffen.
+						</p>
+					<h3 class=headline>Platz 1: Australien</h3>
+						<p>In meinen Augen und aus meiner Erfahrung gibt es kein idealeres Reiseziel für eine alleine reisende Frau! Australien war mein erstes Reiseziel für eine Langzeitreise, 
+						und ich hätte es nicht besser treffen können, aus so vielen Gründen. <br><br>
+						Natürlich absolut westlich, ohne prägnante Religionskultur und so modern eingestellt (mal von der Aborigine-Problematik abgesehen) wie jedes europäische Land, kannst Du Dich 
+						nirgendwo schneller einleben. <br><br>
+						Dazu hilft es wahrscheinlich sehr, dass jährlich über 2 Millionen Deutsche nach Australien reisen: Eine alleinreisende Frau bleibt hier nicht lange alleine! <br><br>
+						Aber was es am attraktivsten für mich gemacht hat, war die unglaubliche Natur, die so herrlich einfach zu bereisen ist! Es gibt Buspässe, Zugpässe, billige Inlandflüge, 
+						Mitfahrgelegenheiten, billige Camper-Vans und Hostels an jeder Ecke. <br><br>
+						<img class=eintragBild src="Bilder/Eintrag2Bild3.jpg"><br>
+						Als jemand, der schüchtern und zitternd losgereist ist, lass Dir von mir sagen: Nirgendwo sonst wirst Du beides schneller los, als Du „Australien“ sagen kannst! <br><br>
+						Die Reiseplanung und -durchführung wird Dir hier fast abgenommen, so viele Möglichkeiten gibt es. Du musst Dich nur noch entscheiden, welche Ecken Du zuerst erobern willst! <br><br>
+						Es gibt noch weitaus mehr Länder, auf die die Kriterien, die ich anfangs beschrieben habe, zutreffen, aber ich habe mich hier auf die bezogen, von denen ich aus eigener Erfahrung sprechen kann.
+						</p>
+				</div>
+				<i class="show"></i>
+				<!-- Trennlinie zwischen den Einträgen -->
+				<div id="trennlinie">&nbsp;</div>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 2 -->
+		<!-- ANFANG EINTRAG 3 -->
+		<article class=vorschau id="C3">
+			<div id="vDiv1">
+				<!-- Überschrift -->
+				<h1> Die besten Tipps & Tricks, um Deine Wertsachen auf Reisen zu sichern! </h1>
+				<h2> Wohin mit all' dem Geld? <br> 
+				18.März 2018 von Lena & Yvonne</h2>			
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag3.jpg">
+				<p class=mittig>Nachdem ich meine Tipps zu praktischen Utensilien für das Reisen in Hostels bereits ausgepackt habe, geht es hier nun um Geldverstecke und alles, was Deine Wertsachen auf Reisen und Dich ruhig schlafen lässt!
+				Ich lande immer wieder in Diskussionen, was die Sicherheit meiner Wertsachen auf Reisen angeht. Oder ob ich ganz besondere Geheimtipps für Geldverstecke hätte. Es wurde also dringend Zeit für einen gründlichen Artikel zum Thema!
+				Zunächst müssen wir aber einen entscheidenden Punkt klären:</p>
+				<div class="hidden">
+					<h3 class=headline> Wo du übernachtest! </h3>
+						<p>Wir dürften uns einig sein, dass es in Hotels ein deutlich geringeres Risiko gibt, dass Deine Wertsachen auf Reisen verschwinden. Natürlich ausgehend davon, dass Du nicht in schäbigen Absteigen landest.<br><br>
+						Hotels haben meist Sorge um ihren guten Ruf, und die Angestellten und das Housekeeping-Team sind nicht nur bedacht darauf, dass Du einen schönen Aufenthalt hast, sondern auch darauf, dass Du nicht zu Schaden kommst. 
+						Also auch nicht Deine Wertsachen. <br><br>
+						Etwas, das sie alle gemein hatten? Safes oder abschließbare Spinde im Zimmer! (Die sichersten Geldverstecke überhaupt.) Egal wie klein, ich hatte bisher immer etwas, worin ich meine absoluten Heiligtümer einschließen 
+						konnte und falls ausnahmsweise mal nicht, hätte ich sie am Empfang abgeben können. <br><br>
+						Deshalb habe ich mir in Hotels bisher nie große Sorgen um das Thema Wertsachen auf Reisen gemacht. Es ist ja nun auch niemand mit Dir im Zimmer, der etwas von Deinem Bett einsammeln könnte. <br>
+						</p>
+					<h3 class=headline>Da kommen wir nämlich zum Kern des Problems: Mehrbettzimmer!</h3> 
+						<p>Und auch zur eigentlichen Wahrheit der Diebstähle… In 90% der Fälle (korrigier mich, wenn ich mich irre) sind es die lieben Mitreisenden, die Dich beklauen, und nicht Angestellte oder Personal. Traurig, aber wahr! Daher ist auch 
+						in Hostels gegenüber Hotels das Risiko, dass etwas verschwindet, leider deutlich höher. <br><br>
+						Und nicht nur Deine Unterkunft birgt ein großes Risiko, bestohlen zu werden, sondern vor allem auf Tagestrips unterwegs. <br><br>
+						Aber – Hilfe naht! – dafür gibt es einige Helferlein und handliche Geldverstecke, die Dir das Reisen erleichtern und Dich durchatmen lassen.<br>
+						</p>
+					<h3 class=headline> Geldverstecke 10 von 10: Brusttasche oder Bauchgürtel </h3>
+						<p>Ich habe anfangs noch einen Bauchgürtel für meine Dokumente genutzt, später dann aber abgeschafft, nachdem ich gemerkt habe, dass ich ihn nur noch am Flughafen nutze, weil es dann wirklich praktisch ist, alles beisammenzuhaben. 
+						In Ländern, in denen auf der Straße gern die Tasche weggerissen wird, aber auch nicht unpraktisch!
+						</p>
+					<h3 class=headline> Geldverstecke 9 von 10: Mini-Geldsafe</h3>
+						<p>Meiner Meinung nach sind diese Geldverstecke eine geniale Idee vom Erfinder, auch zum leicht selbst Basteln. Wenn auch nicht unbedingt mit einer Batterie, aber zumindest mit anderen alltagstauglichen Utensilien wie Labello-Hüllen 
+						zum Beispiel!</p>
+					<h3 class=headline>Diebstahl-Trick 8 von 10: diebstahlsicherer Kameragurt</h3>
+						<p>Auf die Kameragurte, die nicht durchschneidbar sind, hat mich eine Leserin meines Artikels über die DSLR auf Reisen hingewiesen. Auch hier: In Ländern mit Straßenräubern bestimmt sinnvoll! Besonders bei sehr wertvollen Kameras.
+						</p>
+					<h3 class=headline>Geldverstecke 7 von 10: Pacsafe-Beutel</h3>
+						<p>Pacsafe bietet so ziemlich alles an, von großen Rucksäcken über kleine Taschen bis hin zu diesen Beuteln, in die bequem ein kleiner Laptop und alle Wertsachen passen. Der Beutel lässt sich nicht aufschneiden und kann mit einem 
+						Sicherheits-Drahtseil dann noch an alles Mögliche angekettet werden. Leider auch nicht so günstig.</p>
+					<h3 class=headline>Geldverstecke 6 von 10: Kleidung mit Innen-Reißverschlüssen</h3>
+						<p>Im Prinzip kannst Du jede Jacke, die innen Reißverschlüsse hat, als Mini-Safe nutzen, um Dinge nah am Körper zu tragen. Dann darfst Du bloß die Jacke bloß nicht irgendwo herumliegen lassen… Hier mal ein Extrem-Beispiel!
+						</p>
+					<h3 class=headline>Geldverstecke 5 von 10: der Sonnenmilch-Safe</h3>
+						<p>Auf diese Variante der Geldverstecke bin ich über Pinterest gestolpert, aber wollte mir die Schweinerei ersparen, eine Sonnenmilch-Flasche zu reinigen. Nun habe ich auf Amazon die Lösung dafür entdeckt: den Sonnenmilch-Safe. 
+						Genial, oder? (Gibt es auch als Cola-Dose!)</p>
+					<h3 class=headline>Geldverstecke 4 von 10: das BH-Päckchen</h3>
+						<p>Auch eine sehr clevere Art, sein Geld zu sichern: im BH! Allerdings habe ich in warmen Ländern oft das nasse Geld am Leib. Also nicht zu empfehlen. In trockenen Regionen habe ich immer ein bisschen Sorge, den Geldschein 
+						doch zu verlieren, daher ist dieses kleine Beutelchen mit dem extra Druckknopf ideal.</p>
+					<h3 class=headline>Geldverstecke 3 von 10: abschließbare Gepäckstücke</h3>
+						<p>Du solltest beim Kauf Deines großen Rucksacks auf jeden Fall darauf achten, dass er abschließbare Reißverschlüsse besitzt! Ich nutze den Osprey Farpoint 40 meist als riesigen Safe. Gemeinsam mit meiner Nummer 1…
+						</p>
+					<h3 class=headline>Geldverstecke 2 von 10: Umhängetaschen</h3>
+						<p>Ich komme immer mehr von Rucksäcken weg, weil ich nie weiß, was da hinter mir passiert. Und ihn immer wieder von einem kleinen Schloss zu befreien, war mir irgendwann zu lästig. Also habe ich nun wieder eine Umhängetasche 
+						bei mir und bin damit absolut zufrieden. Gibt es für die ganz Unsicheren auch von Pacsafe!</p>
+					<h3 class=headline>Meine absolute Nummer 1: die kleinen Zahlenschlösser</h3>
+						<p>Nichts hat mir so sehr auf meinen Reisen geholfen wie diese kleinen Zahlenschlösser! Ich verschließe damit meinen großen Rucksack, wenn ich unterwegs bin, meine Umhängetasche am Fahrradkorb, wenn ich radle, und die Spinde,
+						die immer mal wieder in Hostels zur Verfügung stehen. Gold wert!!</p> <br><br>
+						Ich nutze nicht (mehr) all diese Utensilien und Geldverstecke selbst. Die Gründe habe ich meist dabei direkt erklärt. Aber das liegt vor allem an meiner Reiseerfahrung und meiner persönlichen Einstellung. Was nicht bedeutet, 
+						dass Du übertrieben paranoid oder absolut nachlässig bist, wenn du mehr oder weniger Wert auf Sicherheit legst.
+					<h3 class=headline> Bonus-Sicherheits-Tipps</h3>
+						<p>Möchtest Du Dich wirklich absichern, überleg mal, ob Du Dir nicht eine Reiseversicherung zulegen möchtest! Das lohnt sich vor allem, je kürzer Deine Reise ist, denn für Langzeitreisen kann das ordentlich auf das Budget schlagen! 
+						Heb dabei aber alle Rechnungen Deiner Wertsachen gut auf, denn die wirst Du im Schadensfall vorlegen müssen. Auch wird in den wenigsten Fällen der Kaufwert ersetzt, sondern der geschätzte aktuelle Wert. Gut im Kleingedruckten der Versicherung nachlesen!<br><br>
+						Lass keine Wertsachen auf Reisen offen auf Deinem Bett herumliegen und verlass dann das Zimmer, wenn Du in einem Mehrbettzimmer schläfst. Dann kannst Du auch gleich ein Schild „Nimm mich mit!“ dranhängen.<br><br>
+						Lass alle Wertsachen auf Reisen bei Tagestouren am sichersten Ort und schlepp nicht automatisch alles mit. Ich persönlich habe meinen Reisepass immer bei mir, aber bei allen anderen Wertsachen wäge ich ab, wie viel ich mit mir 
+						herumtrage. Vor allem solche Dinge wie Dokumenten-Scans und Kreditkarten sollten immer an zwei verschiedenen Orten sein. Also eine Version bei Dir, die andere gut gesichert bei Deinem Gepäck.<br><br>
+						Einen sehr guten Tipp habe ich mir gerade abgeschaut: Mach eine Kopie Deines Reisepasses und lass ihn laminieren. Wenn Du dann an einer Mietstation oder in der Unterkunft gebeten wirst, Deinen Reisepass dazulassen, gibst Du die Kopie ab!<br><br>
+						Ein letzter Rat: Schalt Deinen Kopf ein und begib Dich nicht selbst in die Opferrolle! Egal wie vertraut die Umgebung nun schon wirkt, lass nie alle Deine Vorsichtsmaßnahmen fallen!</p>		
+				</div>
+				<i class="show"></i>
+				<!-- Trennlinie zwischen den Einträgen -->
+				<div id="trennlinie">&nbsp;</div>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 3 -->
+		<!-- ANFANG EINTRAG 4 -->
+		<article class=vorschau id="C4">
+			<div id="vDiv1">
+				<!-- Überschrift -->
+				<h1> Auf Reisen Geld verdienen? 22 verschiedene Arten, die Reisekasse aufzustocken! </h1>
+				<h2> Gut für das Sparschwein <br> 
+				15.März 2018 von Lena & Yvonne</h2>			
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img id="C4" class=bild src="Bilder/Eintrag4.jpg">
+				<p class=mittig>Du würdest am liebsten den Job schmeißen und dein Leben mit reisen verbringen? Das ist Traum vieler Menschen, jedoch trauen sich nur sehr wenige diesen Schritt zu wagen. 
+				Die Große Frage ist: "Wie verdiene ich mein Geld in den Ländern?" Ich zeige Dir hier, wie Du Dir diesen Traum auf 22 verschiedene Arten ermöglichen kannst!</p>
+				<div class="hidden">
+					<h3 class=headline> 1. Das Working Holiday Visa </h3>
+						<p>Du willst auf Reisen Geld verdienen? Das ist quasi die Mutter aller Reisejobs!<br><br>
+						In vielen Ländern der Welt (Australien, Neuseeland, UK, Teilen von Südamerika und, und, und) bekommst Du ein Visum, mit dem Du Dich ein Jahr im entsprechenden Land aufhalten
+						und 6 Monate davon auch arbeiten darfst.<br><br>
+						Jobs findest Du ganz einfach, indem Du hartnäckig mit Deinem Lebenslauf von Tür zu Tür läufst oder die schwarzen Bretter der Hostels abklapperst. <br>
+						</p>
+					<h3 class=headline>2. Fruit Picking</h3> 
+						<p>Die wohl bekannteste Art, in Australien und Neuseeland während des Working-Holiday-Visums Geld zu verdienen. Aber nicht unterschätzen!<br><br>
+						Zehn bis zwölf Stunden in der prallen Sonne Erdbeeren aufzusammeln, kann ganz schön kräftezehrend sein und wird nicht immer entsprechend entlohnt. Daher solltest 
+						Du Dich vorher gut informieren, welche Bedingungen Dein Job mit sich bringt! <br><br>
+						Das hier könnte die körperlich härteste Art sein, auf Reisen Geld dazuzuverdienen.<br>
+						</p>
+					<h3 class=headline> 3. Kellnern </h3>
+						<p>Vielleicht hast Du auch zu Hause während des Studiums oder neben dem Job schon mal gekellnert oder in einer Cocktailbar gejobbt?! Wunderbar! <br><br>
+						Dann wird es Dir nicht schwerfallen, auch in anderen Ländern unterzukommen. Einfach mit dem Lebenslauf von Bar zu Bar laufen und nach offenen Stellen fragen.<br><br>
+						Einziger Haken: In manchen Ländern brauchst Du eine sogenannte Alkohol-Ausschenk-Lizenz. Die bekommst Du aber auch schon durch einen einfachen Online-Kurs. <br>
+						</p>
+					<h3 class=headline>4. Krankenpflege/Altenpflege</h3>
+						<p>Wenn Du eine Ausbildung im Pflegebereich besitzt, kannst Du so gut wie überall Jobs finden. Kranke und pflegebedürftige Menschen gibt es auf der ganzen Welt, 
+						und auch wenn Deine Ausbildung nicht überall anerkannt wird, kannst Du zumindest als Pflegehelfer arbeiten.<br><br>
+						Besonders in Australien ist das sehr einfach und seeehhr lukrativ!<br><br>
+						Alles, was Du brauchst, ist Dein übersetztes Diplom, ein oder zwei englische Referenzen (am besten schon von Deinem alten Arbeitgeber ausstellen lassen) und eine 
+						Nursing Agency wie zum Beispiel Healthcare Australia.<br><br>
+						Auf Reisen als Krankenschwester arbeiten? Gut vorbereitet ist das kein Problem!
+						</p>
+					<h3 class=headline>5. Auf Kreuzfahrtschiffen anheuern</h3>
+						<p>Ob als Entertainer für Gäste oder deren Kinder, als Küchenhilfe, Ausflugsbegleiter oder Zimmermädchen, die Jobs auf Kreuzfahrtschiffen sind vielfältig und zahlreich!<br><br>
+						Die Konditionen allerdings oft auch sehr speziell:<br><br>
+						7 Tage die Woche arbeiten, sich das Zimmer mit anderen teilen und nervige Gäste können die Nachteile sein. Gute Bezahlung, internationale Kontakte knüpfen können, 
+						Trips mit 2-4 Monaten am Stück und dafür anschließend 1-3 Monate frei die Vorteile.<br><br>
+						Am besten wendest Du Dich bei Interesse an Agenturen, die Dich kostenlos vermitteln, wie zum Beispiel Connect.<br><br>
+						Auf Reisen Geld verdienen und um die Welt schippern: Wandering Earl erklärt ganz genau, wie das geht!<br>
+						</p>
+					<h3 class=headline>6. Cafés, Shops, Restaurants</h3>
+						<p>Auch hier ist Klinkenputzen angesagt. Hartnäckig mit dem Lebenslauf auftauchen, Angriff ist die beste Verteidigung! Und immer auch die Augen offen halten nach Zetteln, 
+						auf denen Aushilfen gesucht werden!</p>
+					<h3 class=headline>7. Construction Work</h3>
+						<p>Arbeiten auf der Baustelle – dafür ist nicht jede(r) gemacht, aber auch in diesen Jobs kannst Du sehr gut Geld verdienen.<br><br>
+						Nicht davon abschrecken lassen, dass wir als das schwache Geschlecht gelten!<br><br>
+						Auf Baustellen wird auch gemalert und gehandwerkelt, was wir Frauen durchaus auch hinbekommen!<br><br>
+						Korrektur: auf Reisen Geld verdienen? Das ist die härteste Art!
+						</p>
+					<h3 class=headline>8. Dein Job</h3>
+						<p>Viel häufiger, als Du denkst, kannst Du Deine gelernten Fähigkeiten und Ausbildung auch in anderen Ländern umsetzen. Informiere Dich, denk außerhalb der Box und 
+						all der konservativen Vorstellungen und überleg, wie Du Deinen Job ortsunabhängig fortsetzen kannst…<br><br>
+						Das könnte also der profitabelste Weg sein, auf Reisen Geld zu verdienen…
+						</p>
+					<h3 class=headline>9. Reiseblogger oder Influencer</h3>
+						<p>Nicht ganz so einfach, wie Du Dir das vielleicht vorstellst. Es gibt zwar einige Möglichkeiten, mit Deinem Reiseblog oder Deinen Texten Geld zu verdienen 
+						oder als Influencer bei Instagram aufzusteigen, aber die benötigen viel Vorbereitungszeit und viel, viel Arbeit.<br><br>
+						Auf Um 180 Grad habe ich auch mal einen Einstiegs-Guide zu meinem Lieblings-Social Media Kanal geschrieben: Wie funktioniert Instagram wirklich?<br><br>
+						Falls Dich also harte Arbeit und viel Geduld nicht abschreckt, dann nur zu! Ran an den Speck!
+						</p>
+					<h3 class=headline>10. Social Media Consultant</h3>
+						<p>Du kennst Dich gut aus mit Facebook, Twitter und Instagram? Du kennst Marketing-Strategien rund um Social Media? Super! Dann wäre dieser Job bestimmt etwas für Dich!<br><br>
+						Schreib Firmen an, die noch keine Social-Media-Auftritte haben, und biete ihnen an, diese für sie zu erstellen. Oder schreib Seiten an, bei denen Du noch deutliches 
+						Verbesserungspotenzial siehst, und biete ihnen Deine Hilfe dabei an.<br><br>
+						Generell gibt es so viele verschiedene Arten, online arbeiten und Geld verdienen zu können – auf völlig legale und ehrbare Weise!
+						</p>
+					<h3 class=headline>11. Web Designer</h3>
+						<p>Das Gleiche in Grün. Wenn Du Dich mit dem Erstellen und Verbessern von Websites auskennst, ist das auch wieder der ideale Weg, um ortsunabhängig als 
+						Berater für andere zu arbeiten und Geld zu verdienen.<br><br>
+						Nicht schüchtern sein und anfragen! Mehr als Nein sagen kann niemand.
+						</p> 
+					<h3 class=headline>12. Tour Guide</h3>
+						<p>Frag beim Tourismusbüro einer Stadt an, ob sie noch Tour Guides benötigen, lies und erarbeite Dir das Wissen dazu notfalls in der örtlichen Bibliothek. 
+						Wenn Du länger an einem Ort bleibst, um nicht ständig ein- und auszupacken, lohnt sich der Aufwand, und vielleicht kennst Du ja dann auch schon den ein oder anderen Geheimtipp der Stadt.<br><br>
+						Oder biete selbst Stadtführungen an.<br><br>
+						Für kleines Geld sind mit Sicherheit einige Reisende interessiert daran, sich von Dir die Stadt zeigen zu lassen. Häng Flugblätter aus und warte auf das Feedback.
+						</p>	
+					<h3 class=headline>13. Hosteljobs</h3>
+						<p>In so gut wie jedem Hostel gibt es Jobs für Reisende. Ob Du nun für 2–3 Stunden am Morgen Betten machst, um eine freie Übernachtung zu ergattern, 
+						oder an der Rezeption jobbst – die Möglichkeiten sind vielfältig.<br>
+						Auf Reisen Geld verdienen & null Arbeitsweg? Hier bist Du richtig!
+						</p>	
+					<h3 class=headline>14. Promotion</h3>
+						<p>Ungewöhnlich, aber durchaus machbar: Lass Dich anheuern und wirb für andere Unternehmen. Ob Du nun Flyer verteilst oder in Shopping Malls Kunden in die Geschäfte ziehst, 
+						viel mehr als gutes Englisch und ein halbwegs sicheres Auftreten brauchst Du dabei nicht.<br><br>
+						Ich bin in einem australischen Hostel über einen Flyer gestolpert und habe so 3 Monate lang für eine „Kids Photography Company“ Eltern mit Kindern in Shopping Malls dazu überredet, 
+						ihre Kinder vor Ort fotografieren zu lassen. <br><br>
+						Kostenlose Unterkunft, Bezahlung der Reisekosten, zeitweise ein eigenes Auto UND ein wöchentliches Gehalt?! Was will man mehr! <br><br>
+						Das sind die Ausnahmen und Glücksfälle.<br><br>
+						Aber was ich damit sagen will: Augen offen halten! Es gibt auch solche Jobs auf Reisen.
+						</p>	
+					<h3 class=headline>15. Unterrichte Englisch</h3>
+						<p>Mach einen TEFL-Kurs und such Dir einen Job irgendwo auf der Welt, wo Du Englisch unterrichten kannst. Auch wenn Muttersprachler gern bevorzugt werden, 
+						ist es nicht unmöglich, auch als Deutsche solche Jobs zu finden. Und wenn Du erst mal einen ergattert und damit Referenzen gesammelt hast, wird es umso leichter!
+						</p>	
+					<h3 class=headline>16. Hotels</h3>
+						<p>Ähnlich wie in Hostels und auf Kreuzfahrtschiffen gibt es in Hotels eine Vielzahl von Jobmöglichkeiten. Und viele stellen auch gern Reisende zeitweise ein.<br><br>
+						Ich bin auch hier einfach in die Hotels gegangen und habe gefragt. Meist lassen sie Dich sofort ihren Einstellungsbogen ausfüllen und melden sich, wenn sich etwas ergibt. 
+						Auch da heißt es, hartnäckig bleiben und immer wieder nachfragen, damit Du nicht in Vergessenheit gerätst.<br>
+						</p>	
+					<h3 class=headline>17. Au Pair</h3>
+						<p>Die organisierteste Form der Arbeit auf Reisen. Dazu meldest Du Dich nämlich schon zu Hause bei einer Vermittlungsstelle an und fliegst dann direkt zu Deiner neuen Familie, 
+						bei der Du die Kinder hütest.<br><br>
+						Nicht immer verdient man dabei viel, aber Du bekommst Unterkunft, Verpflegung und oft sogar einen Sprachkurs. Je nachdem wie viel Glück Du hast, 
+						bekommst Du Dein eigenes Zimmer und sogar ein Auto zur Verfügung gestellt!
+						</p>	
+					<h3 class=headline>18. Work Exchange</h3>
+						<p>Deine Arbeitskraft kannst Du so gut wie überall eintauschen! Jobs in allen Varianten findest Du zum Beispiel auf Workaway.<br><br>
+						Wenn Du einfach nur Deine Ausgaben schonen willst und Dir Kost und Unterkunft schon reichen, dann sind HelpX und Idealist tolle Seiten zum Recherchieren.
+						</p>	
+					<h3 class=headline>19. Nutze Deine Talente!</h3>
+						<p>Du kannst etwas, das andere nicht können, aber lernen möchten?<br><br>
+						Dann häng Flyer aus und bring es ihnen bei! Ob Gitarre spielen, Tanzstile oder Nachhilfe, jeder ist in etwas besonders gut. Nutze Deine Stärken und Talente!
+						</p>	
+					<h3 class=headline>20. Fotografie</h3>
+						<p>Wenn Du ganz besonders schöne Bilder auf Deinen Reisen machst und auch die entsprechende Kamera dabei hast, lohnt es sich, diese in einer professionellen Maske wie 
+						zum Beispiel SmugMug auszustellen und zum Verkauf anzubieten! <br><br>
+						Wer weiß, vielleicht wirst Du sogar entdeckt!
+						</p>	
+					<h3 class=headline>21. Wwoofing</h3>
+						<p>Auch Wwoofing (Willing Workers on Organic Farms) ist generell eher nichts, womit man Geld verdienen kann, aber manchmal kannst Du Dir durch ein paar Stunden extra noch ein Taschengeld dazuverdienen.<br><br>
+						In jedem Fall sparst Du Dir aber auch wieder die Unterkunftskosten und kannst währenddessen vielleicht online arbeiten.
+						</p>			
+					<h3 class=headline>22. Auf Reisen Geld verdienen? Sei kreativ!</h3>
+						<p>Die Welt ist eine Pralinenschachtel, Du musst Dich nur bedienen!<br><br>
+						Sei also kreativ und schaffe Dir Deine eigene Marktlücke.<br><br>
+						Ob Du nun in asiatischen Ländern anbietest, die Menükarten der Restaurants auf Übersetzungsfehler zu korrigieren, oder mit Touranbietern Kommissionsdeals aushandelst, es gibt nichts, 
+						was es nicht gibt. Nur Dinge, die Du noch nicht ausprobiert hast!
+						</p>									
+				</div>
+				<i class="show"></i>
+				<!-- Trennlinie zwischen den Einträgen -->
+				<div id="trennlinie">&nbsp;</div>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 4 -->
+		<!-- ANFANG EINTRAG 5 -->
+		<article class=vorschau id="C5">
+			<div id="vDiv1">
+				<!-- Überschrift -->
+				<h1>Die ideale Packliste für Frauen</h1>
+				<h2> Denn ja, wir packen anders! <br> 
+				10.März 2018 von Lena & Yvonne</h2>	
+			</div>
+			<div id="vDiv2">
+				<!-- Bild und Inhalt -->
+				<img class=bild src="Bilder/Eintrag5.jpg">
+				<p class=mittig>Du suchst nach der perfekten Anleitung für die Packliste für Deinen Urlaub, ohne dass Du Dich zu Tode schleppst? Die Panik, etwas auf dieser Packliste zu vergessen, sitzt tief? 
+				Oder auch die Angst um die Sicherheit Deiner Wertsachen? <a href="#C3" style="color: #819FF7;">(Hier findest Du eine Liste der besten Geldverstecke!)</a></p>
+				<div class="hidden">
+						<p>Du bekommst nun von mir die knackige Packliste vorgelegt, die alle Aspekte kurz & praktisch vereint und die perfekte Ressource für jede Reisende ist.<br><br>
+						Was Du als Alleinreisende natürlich als Allererstes brauchst, ist der richtige Rucksack zum Befüllen!<br><br>
+						Ich liebe meinen Osprey Farpoint 40 L da einfach abgöttisch…<br>
+						</p>
+					<h3 class=headline> Meine Geheimzutat auf der Packliste vor dem Urlaub? </h3>
+						<p>
+						Falls Du etwas Ordnung in Deine Packliste und Deinen Rucksack bringen möchtest, kann ich Dir nur wärmstens Packsysteme empfehlen, wie zum Beispiel die ultraleichte und komprimierbare Version von Eagle Creek. 
+						Ich nutze sie immer und überall, und es sind meine „Schubladen“ des Rucksacks. Du kannst sie ideal nutzen, um Deine Packliste sortieren zu können!<br>
+						</p>
+					<h3 class=pack> Deine Packliste #1: Die richtige Kleidung für jedes Wetter! </h3>
+					<h3 class=headline>Für einen Urlaub oder eine Reise in kaltem & nassem Klima</h3>
+						<p>1 Fleecepullover oder 1 warmer Pullover (idealerweise mit Kapuze)<br>
+						1 Regenjacke  & 1 Regenhose  (je nach Klima)<br>
+						2–3 Langarmshirts<br>
+						Wollsocken gegen kalte Füße (1 Paar dünnere und/oder 1 Paar dickere – ich habe immer ein paar davon dabei, auch für klimatisierte Flüge, Bus- oder Zugfahrten – typisch Frau eben!)<br>
+						Max. 2 lange Hosen (beim Urlaub in heißen Ländern reicht 1 für Flüge & Co.)<br>
+						Wäschebeutel
+						</p>
+					<h3 class=headline> Für einen Strandurlaub oder eine Reise in heißem & feuchtem Klima </h3>
+						<p>3–4 Shorts oder Röcke<br>
+						4–5 T-Shirts/Trägertops (je luftiger, desto besser)<br>
+						1–2 Bikinis/Badeanzug <br>
+						1 Sonnenhut/Kappe </p>
+					<h3 class=headline>Für den „Feier“-Abend</h3>
+						<p>1 schickeres Kleid/schicker Rock (entweder oder! Am besten eines, das Du auch im Alltag tragen kannst)<br>
+						1 dünne Strickjacke oder Ähnliches (denk bei beidem an Farben, die sich gut kombinieren lassen)<br>
+					<h3 class=headline> Schuhe (jeweils max. 1 Paar) </h3>
+						<p>(Faltbare) Ballerinas<br>
+						FlipFlops oder Sandalen für den Strandurlaub <br>
+						Wanderschuhe/Turnschuhe (das liegt ganz am Urlaub oder der Art Deiner Reise, beides ist völlig ok)
+						</p>
+					<h3 class=headline> Immer dabei </h3>
+						<p>Unterwäsche (für etwa 1 Woche)<br>
+						Sport-BHs, wenn Du Sport machen willst, nicht vergessen<br>
+						Socken (je nach Klima, evtl. beim Strandurlaub einfach weglassen)<br>
+						1 kleines und 1 großes Reisehandtuch
+						</p>
+					<h3 class=pack> Deine Packliste #2: Urlaubs- oder Reiseapotheke </h3>
+						<p>Medikamente sind fast das Wichtigste auf Reisen und im Urlaub! Wenn auch hoffentlich nur für den Notfall.<br><br>
+						Antiemetika (Medikamente gegen Übelkeit, wenn Du dazu neigst oder seekrank wirst)<br>
+						Elektrolyte (am besten in Pulverform, glaub mir, sie retten Dich bei jeder Magen-Darm-Geschichte auf Reisen…)<br>
+						Kohletabletten (gegen Durchfall, 3–4 reichen, keine ganze Packung einpacken)<br>
+						Buscopan (Krampflöser, wenn Du schlimme „Tage“ hast)<br>
+						Malaria-Prophylaxe/Stand-by-Produkt (je nach Reiseland – unverzichtbar!)<br>
+						Ibuprofen Lysin (wirkt schneller als das normale Ibu)/Paracetamol (was auch immer Dir auch zu Hause bei Schmerzen hilft)
+						Wundsalbe (z. B. Bepanthen – kannst Du aber auch im Urlaub in den meisten Ländern kaufen, also nimm nur eine Mini-Tube mit)<br>
+						Pflaster (am besten wasserfest!)<br>
+						Lucas‘ Papaw Ointment (in Australien entdeckt, falls Du also dort vorbeikommst: mein Allheilmittel, auch sehr gut bei Sonnenbrand, Mückenstichen und ersetzt generell die Wundsalbe)<br>
+					<h3 class=pack> Deine Packliste #3: Urlaub- oder Reisedokumente </h3>
+						<p>Kopien/Scans von allen Dokumenten auf einem USB-Stick und/oder Deinem E-Mail-Server gespeichert <br>
+						Personalausweis/Reisepass <br>
+						2 Kreditkarten <br>
+						Flug-/Bahn-/Busticket (Flugtickets reichen in 99% der Fälle digital)<br>
+						Visum (außerhalb der EU, bei Bedarf)<br>
+						Kontoauszug (Australien, Kanada mit WHV)<br>
+						(Internationaler) Führerschein<br>
+						Auslandskrankenversicherung(spolice)<br>
+						Impfpass (digitale Kopien reichen auch zur Not)<br>
+						Lebenslauf/Zeugnisse/Referenzen (bei WHV, für Jobs)<br><br>
+						Ganz wichtig, nicht vergessen: Hol Dir eine kostenlose Kreditkarte zum weltweiten Geldabheben!
+						</p>
+					<h3 class=pack> Deine Packliste #4: Urlaub- oder Reisespielzeug… äh, Technik </h3>
+						<p>E-Book-Reader (+Ladekabel), falls nicht im Smartphone inbegriffen!<br>
+						Kamera & Kameratasche, Ladegerät<br>
+						SD-Karte für die Kamera & Ersatzkarte<br>
+						Handy (ich nutze ein LG G3, auch als Taschenlampenersatz!), Ladekabel<br>
+						Externer Akku für das Handy<br>
+						Richtig gute Noise-Cancelling-Kopfhörer (nicht günstig, aber jeden Cent wert) oder gute Ohrstöpsel<br>
+						Laptop & Laptoptasche, Ladekabel (für einsame Hostelabende)<br>
+						Dreier-Stecker<br>
+						Steckdosen-Adapter (je nach Urlaub und Reiseland)<br>
+						Externe Festplatte & Schutzhülle (+Kabel)<br>
+						</p>
+					<h3 class=pack> Deine Packliste #5: Urlaubs- oder Reise-Kulturtasche </h3>
+						<p>Zahnbürste & Zahnpasta<br>
+						Bürste (& Kamm, bei langen Haaren)<br>
+						Duschgel<br>
+						Shampoo (& Spülung, ebenfalls ein Muss bei langen Haaren)<br>
+						Pille/Kondome<br>
+						Tampons<br>
+						Mascara (wenn gewollt)<br>
+						Pinzette & Schere (auch für kleine „Notfälle“)<br>
+						Deo(roller)<br>
+						Gesichtscreme (je nach Klima im Urlaub oder auf der Reise & wenn Du auf Produkte reagierst)<br>
+						Rasierer<br>
+						Sonnencreme oder -spray (mind. SPF 30, ist vor Ort oft teuer)<br>
+						Insect Repellent (kannst Du im Urlaub auch gut vor Ort kaufen und wirkt dort meist besser)<br>
+						Schlafbrille (bei Jetlag und nervigen Hostelmitbewohnern)<br>
+						Haargummis, bei langen Haaren<br>
+						Bei Bedarf: Kontaktlinsen & Zubehör/Brille und Ersatzbrille
+						</p>
+					<h3 class=pack> Kleine Extras (auch für die Sicherheit)! </h3>
+						<p>Schlösser (2x, für beide Packtaschen des Rucksacks, mit TSA-Verschluss)<br>
+						Bei Städtereisen mit hoher Diebstahlgefahr lohnt sich der stylische Flipbelt vielleicht für Dich<br>
+						Ein BH-Beutelchen*, immer nützlich auf Reisen in Südostasien<br>
+						Ein aufblasbares Fleece-Nackenkissen, abziehbar, damit waschbar und kuschelig<br>
+						Ein Pacsafe für den Strandurlaub, damit Du Deine Wertsachen an der nächsten Palme anbinden kannst<br><br>
+						Wie viel Schutz mein Gepäck benötigt, kommt auch stark auf die Unterkunfts-Wahl an. Mittlerweile nutze 
+						ich hauptsächlich Einzelzimmer über Airbnb* oder in Hostels und Hotels, die ich über Booking.com* finde. Dort brauche ich natürlich weniger Sicherheitsvorkehrungen.
+						</p>
+				</div>
+				<i class="show"></i>
+				<!-- Trennlinie zwischen den Einträgen -->
+				<div id="trennlinie">&nbsp;</div>
+			</div>
+		</article>
+		<!-- ENDE EINTRAG 5 -->
+	</div>
+</body>
+</html>
