@@ -5,6 +5,7 @@
 	<title> Weltenbummler </title>
 	<link rel="shortcut icon" type="image/x-icon" href="BilderStartseite/icon.png" />
 	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheet.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="responsiveslides.min.js"></script>
@@ -34,6 +35,11 @@
 			var id = $(this).attr('id');
 			$('a').removeClass('active');
 			$("[href=#"+id+"]").addClass('active');
+		});
+		
+		$( "a" ).click(function() {
+			$('a').removeClass('active');
+			$( this ).addClass('active');
 		});
 	});
 	</script>
