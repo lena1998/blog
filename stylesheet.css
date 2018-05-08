@@ -72,6 +72,10 @@ a {
 
 /* Klassen */
 
+.active{
+	background-color: #E6E6E6;
+}
+
 .rslides {
   position: relative;
   list-style: none;
