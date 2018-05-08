@@ -251,6 +251,12 @@
         color: #f5a9a9;
     }
 	
+	kontakt{
+		font-weight: bold;
+		font-size: 1.5vw;
+		color: #f5a9a9;
+	}
+	
     a{
         color: white; 
         text-decoration: none !important ;
@@ -286,8 +292,38 @@
         color: #f5a9a9;
     }
 	#trennlinie {
-	width: 100%;
-	height: 1px;
-	background-color: #000000;
-	font-size: 1px;
-}
+		width: 100%;
+		height: 1px;
+		background-color: #000000;
+		font-size: 1px;
+	}
+	@media (max-width: 991px) {
+		<!-- Anpassung der Kontaktbox je nach Größe (hier: Ausklappbares Menü, Kontakt) -->
+    }
+    
+	box {
+		margin-left: 56%;
+        background: aliceblue;
+        height:50%;
+        width: 4%;
+        position:absolute;
+        opacity: 0.5;
+        visibility: hidden;
+        box-shadow: 0px 0px 5px black;
+        text-align: center;
+    }
+    
+	button.Con{
+        position: absolute;
+        margin-left: 28%;
+        margin-top: 2.5%;
+        background: aliceblue;
+        border: none;
+        color: #f5a9a9;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+        
+	a.disabled {
+        pointer-events: none;
+    }
