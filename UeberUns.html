@@ -10,8 +10,26 @@
     
     <script>
 	function myFunction(x) {
-    x.classList.toggle("change");
-	}
+        x.classList.toggle("change");
+    }
+    
+    function conFunction(){
+    document.getElementById("contacts").classList.add('disabled');
+    document.getElementById("box").style.visibility = "visible";
+    var box = $("box");
+        box.animate({
+        top: '10em',
+        width: '20%',
+        marginLeft: '38%',
+        height: '50%',
+        opacity: '0.5'  
+        });
+        box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+	}; 
+    function outFunction(){
+    document.getElementById("contacts").classList.remove('disabled');
+    $('box').removeAttr('style');
+}; 
 	</script>    
 </head>
     <!-- font-size im .title je nach Zeilenanzahl der Überschrift anpassen ( eine Zeile 5vw, zwei Zeilen 3 vw) -->
@@ -28,7 +46,11 @@
 			<div class="bar3"></div>
 			</div></span>
         </button>
-
+		<box id="box"><kontakt>Kontakt</kontakt><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br>
+			Yvonne & Lena<br>
+			28329 Bremen<br>
+			blabla@web.de<br>
+		</box>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -48,13 +70,13 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yvonne</a>
               <div class="dropdown-menu" aria-labelledby="dropdown10">
-                <a class="dropdown-item" href="#">Eintrag 1</a>
-                <a class="dropdown-item" href="#">Eintrag 2</a>
-                <a class="dropdown-item" href="#">Eintrag 3</a>
+                <a class="dropdown-item" href="#">Island</a>
+                <a class="dropdown-item" href="#">Norwegen</a>
+                <a class="dropdown-item" href="#">Mallediven</a>
               </div>
             </li>       
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" id="contacts" href="#" onclick="conFunction()">Kontakt</a>
             </li>
           </ul>
         </div>
