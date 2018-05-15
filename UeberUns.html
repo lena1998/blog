@@ -13,19 +13,33 @@
         x.classList.toggle("change");
     }
     
-    function conFunction(){
-    document.getElementById("contacts").classList.add('disabled');
-    document.getElementById("box").style.visibility = "visible";
-    var box = $("box");
-        box.animate({
-        top: '10em',
-        width: '20%',
-        marginLeft: '38%',
-        height: '50%',
-        opacity: '0.5'  
-        });
-        box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
-	}; 
+function conFunction(){                                                                     //Ausfahren der Kontaktbox, bezogen auf die Screengröße
+    if (window.matchMedia('(max-width: 991px)').matches){                                   //Screen kleiner als 991px                                               
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '300px',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '200px', height: '300px', opacity: '1'}, "slow"); 
+    }else{
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '10em',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+        } 
+};
     function outFunction(){
     document.getElementById("contacts").classList.remove('disabled');
     $('box').removeAttr('style');
@@ -72,7 +86,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdown10">
                 <a class="dropdown-item" href="Island.html">Island</a>
                 <a class="dropdown-item" href="Norwegen.html">Norwegen</a>
-                <a class="dropdown-item" href="Mallediven.html">Mallediven</a>
+                <a class="dropdown-item" href="Malediven.html">Malediven</a>
               </div>
             </li>       
             <li class="nav-item">
