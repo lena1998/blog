@@ -173,97 +173,98 @@
     font-family: "Century Gothic";
 	}      
 	#header {
-		position:relative;		
-		min-height: 100%;
-		margin-left: auto !important;
-		margin-right: auto !important;
-		width: 80%;
-		background-size: contain;
-		background-color: white;
-		text-align: center;
-		z-index:2;
-		}
-		.picture {
-		width:100%;
-		display: block;
-		z-index: 5;
-		position:relative;
-		}
-		.title{                 
-		position:relative;
-		margin-left: auto;
-		margin-right: auto;
-		z-index: 11;
-        width: 70%;
-		margin-top: -25%;
-		font-size: 3vw;
-		color:white;
-		text-shadow: 0px 0px 5px black;
-		}                       
-		datum{
-		font-size: 1.2vw;
-		margin-left: auto;
-		margin-right: auto;
-		position:relative;
-		z-index: 10;
-		font-style: italic;		
-        font-family: "Times New Roman";
-		}
-		.text{                  
-		position:relative;
-        text-align: left;
-		padding-top: 16%;               
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 1vw;
-		width: 60%;
-		word-break: break-all;
-        word-break: break-word;
-        z-index:10;
-		}
-        ueb{
-        font-weight: bold;
-        font-size: 1.5vw;
-        color: #f5a9a9;
-        }
-        @media (max-width: 1083px) {
-        <!-- erster Buchstabe fixen -->
-        }
-        p::first-letter {
-            color: black;
-            font-size: 3vw;
-            font-weight: bold;           
-            float: left;
-        }
-        p.mittig::first-letter {
-            line-height: 1.94em;
-            margin: -0.5em -0.5 -30 0;
-        }
-        num{
-        font-weight:bold;
-        font-size: 1.3vw;
-        }
-        dec{
-        font-weight:bold;
-        color: #f5a9a9;
-        }
-        @media (max-width: 991px) {
-        <!-- Anpassung der Kontaktbox je nach Größe (hier: Ausklappbares Menü, Kontakt) -->
-        }
-        box{
-        margin-left: 56%;
-        background: aliceblue;
-        height:50%;
-        width: 4%;
-        position:absolute;
-        opacity: 0.5;
-        visibility: hidden;
-        box-shadow: 0px 0px 5px black;
-        text-align: center;
-        }
+    position:relative;		
+    min-height: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80%;
+    background-size: contain;
+    background-color: white;
+    text-align: center;
+    z-index:2;
+    }
+    .picture {
+    width:100%;
+    display: block;
+    z-index: 5;
+    position:relative;
+    }
+    .title{                 
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 11;
+    width: 70%;
+    margin-top: -25%;
+    font-size: 3vw;
+    color:white;
+    text-shadow: 0px 0px 5px black;
+    }                       
+    datum{
+    font-size: 1.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    z-index: 10;
+    font-style: italic;		
+    font-family: "Times New Roman";
+    }
+    .text{                  
+    position:relative;
+    text-align: left;
+    padding-top: 16%;               
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1vw;
+    width: 60%;
+    word-break: break-all;
+    word-break: break-word;
+    z-index:10;
+    }
+    ueb{
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #f5a9a9;
+    }
+    ueb.sm{}
+    
+    @media (max-width: 1083px) {
+    <!-- erster Buchstabe fixen -->
+    }
+    p::first-letter {
+        color: black;
+        font-size: 3vw;
+        font-weight: bold;           
+        float: left;
+    }
+    p.mittig::first-letter {
+        line-height: 1.94em;
+        margin: -0.5em -0.5 -30 0;
+    }
+    num{
+    font-weight:bold;
+    font-size: 1.3vw;
+    }
+    dec{
+    font-weight:bold;
+    color: #f5a9a9;
+    }
+
+    box{
+    margin-left: 56%;
+    background: aliceblue;
+    height:50%;
+    width: 4%;
+    position:absolute;
+    opacity: 0.5;
+    visibility: hidden;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+    }
+    @media (max-width: 991px) {
         button.Con{
         position: absolute;
-        margin-left: 28%;
+        padding-left: 0px;
         margin-top: 2.5%;
         background: aliceblue;
         border: none;
@@ -271,6 +272,23 @@
         font-size: 1vw;
         cursor: pointer;
         }
-        a.disabled {
-        pointer-events: none;
+        
+        ueb.sm{
+            font-weight: bold;
+            font-size: 2vw;
+            color: #f5a9a9;
         }
+    }
+    button.Con{
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 2.5%;
+    background: aliceblue;
+    border: none;
+    color: #f5a9a9;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    a.disabled {
+    pointer-events: none;
+    }
