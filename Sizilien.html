@@ -6,291 +6,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="Bilder/icon.png" />
-	<style>
-    
-    
-    .navbar {
-    background-color: #f0f8ff;
-    }
-    .navbar .navbar-brand {
-    color: #7e7e7e;
-    }
-    .navbar .navbar-brand:hover,
-    .navbar .navbar-brand:focus {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-text {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-text a {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-text a:hover,
-    .navbar .navbar-text a:focus {
-      color: #7e7e7e; 
-    }
-    .navbar .navbar-nav .nav-link {
-      color: #7e7e7e;
-      border-radius: .25rem;
-      margin: 0 0.25em;
-    }
-    .navbar .navbar-nav .nav-link:not(.disabled):hover,
-    .navbar .navbar-nav .nav-link:not(.disabled):focus {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-nav .dropdown-menu {
-      background-color: #f0f8ff;
-      border-color: #86accc;
-    }
-    .navbar .navbar-nav .dropdown-menu .dropdown-item {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
-    .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
-    .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
-      color: #7e7e7e;
-      background-color: #86accc;
-    }
-    .navbar .navbar-nav .dropdown-menu .dropdown-divider {
-      border-top-color: #86accc;
-    }
-    .navbar .navbar-nav .nav-item.active .nav-link,
-    .navbar .navbar-nav .nav-item.active .nav-link:hover,
-    .navbar .navbar-nav .nav-item.active .nav-link:focus,
-    .navbar .navbar-nav .nav-item.show .nav-link,
-    .navbar .navbar-nav .nav-item.show .nav-link:hover,
-    .navbar .navbar-nav .nav-item.show .nav-link:focus {
-      color: #7e7e7e;
-      background-color: #86accc;
-    }
-    .navbar .navbar-toggle {
-      border-color: #86accc;
-    }
-    .navbar .navbar-toggle:hover,
-    .navbar .navbar-toggle:focus {
-      background-color: #86accc;
-    }
-    .navbar .navbar-toggle .navbar-toggler-icon {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-collapse,
-    .navbar .navbar-form {
-      border-color: #7e7e7e;
-    }
-    .navbar .navbar-link {
-      color: #7e7e7e;
-    }
-    .navbar .navbar-link:hover {
-      color: #7e7e7e;
-    }
-
-    @media (max-width: 575px) {
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #7e7e7e;
-      }
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #7e7e7e;
-      }
-      .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #7e7e7e;
-        background-color: #86accc;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #7e7e7e;
-      }
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #7e7e7e;
-      }
-      .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #7e7e7e;
-        background-color: #86accc;
-      }
-    }
-
-    @media (max-width: 991px) {
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #7e7e7e;
-      }
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #7e7e7e;
-      }
-      .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #7e7e7e;
-        background-color: #86accc;
-      }
-    }
-
-    @media (max-width: 1199px) {
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #7e7e7e;
-      }
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #7e7e7e;
-      }
-      .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #7e7e7e;
-        background-color: #86accc;
-      }
-    }
-
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #7e7e7e;
-    }
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #7e7e7e;
-    }
-    .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #7e7e7e;
-      background-color: #86accc;
-    }
-
-    .container {
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #7e7e7e;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change .bar2 {opacity: 0;}
-
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-	body{
-	background-color: aliceblue;
-    font-family: "Century Gothic";
-	}      
-	#header {
-		position:relative;		
-		min-height: 100%;
-		margin-left: auto !important;
-		margin-right: auto !important;
-		width: 80%;
-		background-size: contain;
-		background-color: white;
-		text-align: center;
-		z-index:2;
-		}
-		.picture {
-		width:100%;
-		display: block;
-		z-index: 5;
-		position:relative;
-		}
-		.title{                 
-		position:relative;
-		margin-left: auto;
-		margin-right: auto;
-		z-index: 11;
-        width: 70%;
-		margin-top: -25%;
-		font-size: 3vw;
-		color:white;
-		text-shadow: 0px 0px 5px black;
-		}                       
-		datum{
-		font-size: 1.2vw;
-		margin-left: auto;
-		margin-right: auto;
-		position:relative;
-		z-index: 10;
-		font-style: italic;		
-        font-family: "Times New Roman";
-		}
-		.text{                  
-		position:relative;
-        text-align: left;
-		padding-top: 16%;               
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 1vw;
-		width: 60%;
-		word-break: break-all;
-        word-break: break-word;
-        z-index:10;
-		}
-        ueb{
-        font-weight: bold;
-        font-size: 1.5vw;
-        color: #f5a9a9;
-        }
-        @media (max-width: 1083px) {
-        <!-- erster Buchstabe fixen -->
-        }
-        p::first-letter {
-            color: black;
-            font-size: 3vw;
-            font-weight: bold;           
-            float: left;
-        }
-        p.mittig::first-letter {
-            line-height: 1.94em;
-            margin: -0.5em -0.5 -30 0;
-        }
-        num{
-        font-weight:bold;
-        font-size: 1.3vw;
-        }
-        dec{
-        font-weight:bold;
-        color: #f5a9a9;
-        }
-        @media (max-width: 991px) {
-        <!-- Anpassung der Kontaktbox je nach Größe (hier: Ausklappbares Menï¿½) -->
-        }
-        box{
-        margin-left: 56%;
-        background: aliceblue;
-        height:50%;
-        width: 4%;
-        position:absolute;
-        opacity: 0.5;
-        visibility: hidden;
-        box-shadow: 0px 0px 5px black;
-        text-align: center;
-        }
-        button.Con{
-        position: absolute;
-        margin-left: 28%;
-        margin-top: 2.5%;
-        background: aliceblue;
-        border: none;
-        color: #f5a9a9;
-        font-size: 1vw;
-        cursor: pointer;
-        }        
-        a.disabled {
-        pointer-events: none;
-        }
-	</style>
-    
+    <link rel="stylesheet" href="Bilder/Sizilien/stylesheetSizilien.css">
+ 
     <script>
-    function myFunction(x) {
+function myFunction(x) {                                                                    //Ausklappen der Navigationsbar
         x.classList.toggle("change");
     }
     
-    function conFunction(){
+    function conFunction(){                                                                 //Ausfahren der Kontaktbox
     document.getElementById("contacts").classList.add('disabled');
     document.getElementById("box").style.visibility = "visible";
     var box = $("box");
@@ -304,10 +27,11 @@
         box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
 }; 
 
-    function outFunction(){
+    function outFunction(){                                                                 //Einklappen der Kontaktbox
     document.getElementById("contacts").classList.remove('disabled');
     $('box').removeAttr('style');
 }; 
+
 
 
     </script>
@@ -320,7 +44,7 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg rounded sticky-top">
+<nav class="navbar navbar-expand-lg rounded sticky-top">                                    <!--Navigationsbar-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggle-label" style="color:#7e7e7e;" ><div class="container" onclick="myFunction(this)">
   <div class="bar1"></div>
@@ -329,13 +53,13 @@
 </div></span>
         </button>
         
-    <box id="box"><ueb>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br>
+    <box id="box"><ueb>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br> <!--Kontaktbox-->
     
     Yvonne & Lena<br>
     28329 Bremen<br>
     
     blabla@web.de<br>
-    </box>
+    </box>                                                                                                          <!--Kontaktbox Ende-->
 
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
@@ -350,7 +74,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdown10">
                 <a class="dropdown-item" href="Japan.html">Japan</a>
                 <a class="dropdown-item" href="Sizilien.html">Sizilien</a>
-                <a class="dropdown-item" href="#">Eintrag 3</a>
+                <a class="dropdown-item" href="Kapstadt.html">Kapstadt</a>
               </div>
             </li>           
             <li class="nav-item dropdown">
@@ -366,28 +90,28 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav>                                                                                    <!--Navigationsbar Ende-->
 
 
-	<div id=header>
+<div id=header>                                                                                 <!-- Mittlerer weißer Streifen -->
 
-  <div class=picture><img class=picture src="Bilder/Sizilien/csm_Italien_Sizilien2138508_49295d7167.jpg" alt="Küste"></div></a>
-	<datum> 30.01.2017 von Lena</datum>
-	<div class=title>Sizilien Rundreise: Route, Highlights, Unterkünfte & Geheimtipps</div></a>
-	
-	<div class=text><p class=mittig>Sizilien, die traumhafte Mittelmeerinsel vor der süditalienischen Küste, lockt mit einmaligen Landschaften, barocken Städten, idyllischen Fischerdörfern, dem größten Vulkan Europas und einer ordentlichen Prise italienischem Charme. Warum sich eine Sizilien Rundreise auch im November noch lohnt, das zeige ich dir in diesem Beitrag.<br><br>
+<div class=picture><img class=picture src="Bilder/Sizilien/csm_Italien_Sizilien2138508_49295d7167.jpg" alt="Küste"></div></a>   <!--Titelbild -->
+<datum> 30.01.2017 von Lena</datum>                                                                                             <!--Datum und Autor-->
+<div class=title>Sizilien Rundreise: Route, Highlights, Unterkünfte & Geheimtipps</div></a>                                     <!--Überschrift im Bild-->
+
+<div class=text><p class=mittig>Sizilien, die traumhafte Mittelmeerinsel vor der süditalienischen Küste, lockt mit einmaligen Landschaften, barocken Städten, idyllischen Fischerdörfern, dem größten Vulkan Europas und einer ordentlichen Prise italienischem Charme. Warum sich eine Sizilien Rundreise auch im November noch lohnt, das zeige ich dir in diesem Beitrag.<br><br>
 
 <ueb>Die Route unserer Sizilien Rundreise</ueb><br><br>
 
-Da eine Woche niemals ausreicht, um die komplette 25.426 km/2 große Insel zu bereisen, grenzen wir einen Großteil Siziliens von vorne rein aus und konzentrieren uns auf den (Süd-)osten. Mit herrlichen Küstenorten und Stränden, barocken Städten, idyllischen Bergdörfern im Landesinneren sowie dem <dec>Ätna</dec>, dem Wahrzeichen Siziliens, bietet diese Region die perfekte Mischung für eine Rundreise.<br><br>
+Da eine Woche niemals ausreicht, um die komplette 25.426 km² große Insel zu bereisen, grenzen wir einen Großteil Siziliens von vorne rein aus und konzentrieren uns auf den (Süd-)osten. Mit herrlichen Küstenorten und Stränden, barocken Städten, idyllischen Bergdörfern im Landesinneren sowie dem <dec>Ätna</dec>, dem Wahrzeichen Siziliens, bietet diese Region die perfekte Mischung für eine Rundreise.<br><br>
 
 Wir landen am internationalen Flughafen in <dec>Catania</dec>, nehmen unseren Mietwagen in Empfang und düsen Richtung Norden bis <dec>Taormina</dec>. Von dort aus fahren wir in einer großen Schleife einmal um den Ätna herum, am Meer entlang Richtung Süden und stoppen in den Küstenorten <dec>Syrakus</dec>, <dec>Noto</dec> und <dec>Marzameni</dec>. Auf der Rücktour geht es durchs bergige Inland nach <dec>Modica</dec> und <dec>Ragusa</dec>. <dec>Enna</dec> ist der letzte Stop auf unserer Route, bevor wir über die Autostrada zurück nach Catania fahren.<br><br>
 
 Die Highlights dieser Reise stelle ich dir in diesem Artikel vor.<br><br>
 
-<ueb>Mazzarò Bucht & Isola Bella</ueb><br><br>
+<ueb>Mazzaró Bucht & Isola Bella</ueb><br><br>
 
-Die felsige Mini-Insel Isola Bella ist wohl, nach dem Ätna, das berühmteste Fotomotiv Siziliens. Sie liegt im türkisfarbenen Ionischen Meer, unterhalb der Stadt Taormina und ist durch eine schmale Sandbank mit der Mazzarò Bucht verbunden. Trockenen Fußes erreichst du die Insel nur bei Ebbe. Allerdings kannst du nicht weiter vordringen, als zu einem geschlossenen Tor, denn die malerische Isola Bella steht unter Naturschutz.<br>
+Die felsige Mini-Insel Isola Bella ist wohl, nach dem Ätna, das berühmteste Fotomotiv Siziliens. Sie liegt im türkisfarbenen Ionischen Meer, unterhalb der Stadt Taormina und ist durch eine schmale Sandbank mit der Mazzaró Bucht verbunden. Trockenen Fußes erreichst du die Insel nur bei Ebbe. Allerdings kannst du nicht weiter vordringen, als zu einem geschlossenen Tor, denn die malerische Isola Bella steht unter Naturschutz.<br>
 <div class=picture><img class=picture src="Bilder/Sizilien/bellaH1.jpg" alt="Isola Bella"></div><br>
 
 <ueb>Taormina</ueb><br><br>
@@ -422,7 +146,7 @@ Auf der Nordseite des Vulkans folgen wir der asphaltierten Bergstraße, die uns i
 
 Wer von den karamellfarbenen Gassen und hübschen Barockgebäuden in Siracusa schwärmt, meint mit großer Sicherheit nicht das moderne Zentrum, sondern die historische auf einer winzigen Halbinsel gelegene Altstadt <dec>Ortygia</dec>, die wie ein Open-Air Museum wirkt.<br><br>
 
-Ein Labyrinth aus schmalen, von Cafßs und Restaurants gesäumten Gassen, führt von einem Platz zum nächsten. Der schönste unter ihnen ist die gigantische <dec>Piazza del Duomo</dec>, die von imposanten, strahlendweißen Gebäuden umrahmt wird.<br><br>
+Ein Labyrinth aus schmalen, von Cafés und Restaurants gesäumten Gassen, führt von einem Platz zum nächsten. Der schönste unter ihnen ist die gigantische <dec>Piazza del Duomo</dec>, die von imposanten, strahlendweißen Gebäuden umrahmt wird.<br><br>
 
 Meine Tipps für Syrakus:<br><br>
 
@@ -466,7 +190,7 @@ Auch wenn einige der Häuser mich an die hässlichen Plattenbausiedlungen von Marz
 
 Meine Tipps für Enna:<br><br>
 
-<num>1.</num> Ein schönes Ambiente und küstliche sizilianische Gerichte findest du im Baglio Balata, dessen gemütlicher Innenhof bei kühlem Wetter beheizt wird.<br><br>
+<num>1.</num> Ein schönes Ambiente und köstliche sizilianische Gerichte findest du im Baglio Balata, dessen gemütlicher Innenhof bei kühlem Wetter beheizt wird.<br><br>
 
 <num>2.</num> Das etwas altbacken wirkende Hotel Sicilia hat eine perfekte Lage inmitten der Innenstadt, kostenlose Parkplätze, ein super Frühstück und vom Balkon aus überblickst du ganz Enna.<br><br>
 
@@ -482,15 +206,15 @@ Wer im November nach Sizilien reist, so wie wir es getan haben, muss mit schlech
 
 <num>2.</num> Fortbewegung auf Sizilien<br>
 
-Eines steht fest: Autofahren in Italien verlangt starke Nerven und Sizilien ist da ganz sicher keine Ausnahme! Hupen, drängeln, abrupt stehenbleiben, aus Parkläcken rausschießen, ohne Ankündigung zurücksetzen, wild gestikulierend am Steuer telefonieren und auf einer Landstraße von rechts und links gleichzeitig überholt werden, das gehört auf Siziliens Straßen einfach dazu.<br><br>
+Eines steht fest: Autofahren in Italien verlangt starke Nerven und Sizilien ist da ganz sicher keine Ausnahme! Hupen, drängeln, abrupt stehenbleiben, aus Parklücken rausschießen, ohne Ankündigung zurücksetzen, wild gestikulierend am Steuer telefonieren und auf einer Landstraße von rechts und links gleichzeitig überholt werden, das gehört auf Siziliens Straßen einfach dazu.<br><br>
 
 Dementsprechend wüst sehen die Autos der Einheimischen oft aus. Beulen, Kratzer und herunterhängende Seitenspiegel sind keine Seltenheit. Wer sich der Herausforderung stellen möchte (unbedingt zu empfehlen!) holt seinen Mietwagen am besten gleich am Flughafen ab. Bei der Buchung solltest du darauf achten, dass du ausreichend versichert bist und auch kleine Schäden abgedeckt werden.<br><br>
 
 Worauf du bei deiner Sizilien Rundreise mit dem Mietwagen außerdem achten solltest, sind die Blitzer, denn die lauern an jeder Straßenecke und knipsen nicht nur bei erhöhter Geschwindigkeit, sondern auch, wenn du aus Versehen in einer Straße gelandet ist, in der nur Anwohner fahren dürfen. Das kommt öfters vor als du denkst.<br><br>
 
-</p></div>
-</div>
-
+</p></div>                                                                                                      <!--Ende Text-->
+	
+</div>                                                                                                          <!-- Mittlerer weißer Streifen Ende -->
 <!-- https://globusliebe.com/sizilien-rundreise/ -->
 </body>
 </html>
