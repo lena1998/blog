@@ -5,8 +5,10 @@
 	<title> Weltenbummler </title>
 	<link rel="shortcut icon" type="image/x-icon" href="BilderStartseite/icon.png" />
 	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheet.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="responsiveslides.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,11 +43,76 @@
 			$('a').removeClass('active');
 			$( this ).addClass('active');
 		});
+		
+		var active1 = false;
+		var active2 = false;
+
+		$('.parent').on('mousedown touchstart', function() {
+    
+		if (!active1) $(this).find('.test1').css({'background-color': '#f5a9a9;', 'transform': 'translate(5px,100px)'});
+		else $(this).find('.test1').css({'background-color': '#f5a9a9;', 'transform': 'none'});
+		if (!active2) $(this).find('.test2').css({'background-color': '#f5a9a9;', 'transform': 'translate(5px,200px)'});
+		else $(this).find('.test2').css({'background-color': '#f5a9a9;', 'transform': 'none'});
+		active1 = !active1;
+		active2 = !active2;
+      
+		});
+		
 	});
+	
+	function conFunction(){                                                                  //Ausfahren der Kontaktbox, bezogen auf die Screengröße
+		if (window.matchMedia('(max-width: 991px)').matches){                                //Screen kleiner als 991px                                               
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '300px',
+            width: '20%',
+            marginLeft: '38%',
+            height: '20%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '200px', height: '100px', opacity: '1'}, "slow"); 
+		}else{
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '10em',
+            width: '20%',
+            marginLeft: '38%',
+            height: '20%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '20%', height: '30%', opacity: '1'}, "slow");
+        } 
+	};
+		
+	function outFunction(){                                                                 //Einklappen der Kontaktbox
+		document.getElementById("contacts").classList.remove('disabled');
+		$('box').removeAttr('style');
+	}; 
 	</script>
 </head>
 	
 <body>
+
+	<!--Kontaktbox-->
+	<box id="box"><ueb class=sm>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br> 
+    
+    Yvonne & Lena<br>
+    28329 Bremen<br>
+    
+    blabla@web.de<br><br>
+    
+    </box> 
+
+	<div class="parent">
+		<div class="test1"><a href="UeberUns.html"><i class="fa fa-user fa-2x"></i></a></div>
+		<div class="test2"><a id="contacts" href="#" onclick="conFunction()"><i class="fa fa-envelope-o fa-2x"></i></a></div>
+		<div class="mask"><i class="fa fa-home fa-3x"></i></div>
+	</div>          
+
 	<!-- #ANFANG SIDEBAR (Übersicht aller Einträge und Navigation mit Bookmarks und Links) -->
 	<div class="sidenav">
 	<p>Alle Einträge auf einen Blick:</p>
@@ -59,11 +126,11 @@
 	<p>Lena's Beiträge:</p>
 	<a href="Japan.html">Japan</a>
 	<a href="Sizilien.html">Sizilien</a>
-	<a href="#">...</a>
+	<a href="#">Kapstadt</a>
 	<p>Yvonne's Beiträge:</p>
 	<a href="Island.html">Island</a>
-	<a href="#">...</a>
-	<a href="#">...</a>
+	<a href="Norwegen.html">Norwegen</a>
+	<a href="Malediven.html">Malediven</a>
 	</div>
 	<!-- #ENDE SIDEBAR -->
 	<div id="middle">
@@ -173,13 +240,13 @@
 						fürs Erste gut beschäftigt!<br><br>
 						Damit Dich nicht auch noch all die neuen Eindrücke überschwemmen, lohnt es sich vielleicht, ein Land auszuwählen, in dem Du zumindest die Kultur größtenteils verstehst und kennst. Die Sprache allein 
 						wird schon Abenteuer genug sein. <br><br>
-						Eine gute Ecke, um auszutesten, ob Du für das Alleine-Reisen als Frau geschaffen bist (ja, das bist Du!) und um mal langsam die Fühler auszustrecken? <br><br>
+						Eine gute Ecke, um auszutesten, ob Du für das Alleine-Reisen als Frau geschaffen bist (ja, das bist Du!) und um mal langsam die Fühler auszustrecken... <br><br>
 						</p>
 					<h3 class=headline>Platz 2: Südostasiatische Länder wie Thailand und Bali in Indonesien</h3>
 						<p>In Südostasien gibt es alle Varianten des exotischen Reisens und sämtliche Stufen vom Beginner-Status bis zum Fortgeschrittenen. <br><br>
 						Ecken wie Thailand und Bali machen es einer Asien-Beginnerin und alleinreisenden Frau allerdings leicht: Tourismus gehört hier zum Alltag, die Menschen sind auf Touristen und Reisende 
 						eingestellt, und es gibt massenweise Alleinreisende, mit denen Du Dich zusammenschließen und gemeinsam weiterreisen kannst. <br><br>
-						Als ich das erste Mal nach Bali gereist bin, hat mir ein Freund zuvor gesagt, Bali sei nicht wirklich Asien, es wäre eher ?der verlängerte Arm von Australien?.<br><br>
+						Als ich das erste Mal nach Bali gereist bin, hat mir ein Freund zuvor gesagt, Bali sei nicht wirklich Asien, es wäre eher "der verlängerte Arm von Australien".<br><br>
 						Er hat damit nicht den Schwarm an australischen Touristen gemeint, obwohl das absolut zutrifft. Er meinte, dass Bali fast schon westlich ausgelegt ist. <br><br>
 						Das, und die Tatsache, dass Bali die einzige hinduistische Insel in ganz Indonesien ist, macht es für alleinreisende Frauen besonders anziehend. <br><br>
 						<img class=eintragBild src="BilderStartseite/Eintrag2Bild2.jpg"><br>
@@ -198,7 +265,7 @@
 						Aber was es am attraktivsten für mich gemacht hat, war die unglaubliche Natur, die so herrlich einfach zu bereisen ist! Es gibt Buspässe, Zugpässe, billige Inlandflüge, 
 						Mitfahrgelegenheiten, billige Camper-Vans und Hostels an jeder Ecke. <br><br>
 						<img class=eintragBild src="BilderStartseite/Eintrag2Bild3.jpg"><br>
-						Als jemand, der schüchtern und zitternd losgereist ist, lass Dir von mir sagen: Nirgendwo sonst wirst Du beides schneller los, als Du ?Australien? sagen kannst! <br><br>
+						Als jemand, der schüchtern und zitternd losgereist ist, lass Dir von mir sagen: Nirgendwo sonst wirst Du beides schneller los, als Du "Australien" sagen kannst! <br><br>
 						Die Reiseplanung und -durchführung wird Dir hier fast abgenommen, so viele Möglichkeiten gibt es. Du musst Dich nur noch entscheiden, welche Ecken Du zuerst erobern willst! <br><br>
 						Es gibt noch weitaus mehr Länder, auf die die Kriterien, die ich anfangs beschrieben habe, zutreffen, aber ich habe mich hier auf die bezogen, von denen ich aus eigener Erfahrung sprechen kann.
 						</p>
@@ -233,10 +300,10 @@
 						Deshalb habe ich mir in Hotels bisher nie große Sorgen um das Thema Wertsachen auf Reisen gemacht. Es ist ja nun auch niemand mit Dir im Zimmer, der etwas von Deinem Bett einsammeln könnte. <br>
 						</p>
 					<h3 class=headline>Da kommen wir nämlich zum Kern des Problems: Mehrbettzimmer!</h3> 
-						<p>Und auch zur eigentlichen Wahrheit der Diebstähle? In 90% der Fälle (korrigier mich, wenn ich mich irre) sind es die lieben Mitreisenden, die Dich beklauen, und nicht Angestellte oder Personal. Traurig, aber wahr! Daher ist auch 
+						<p>Und auch zur eigentlichen Wahrheit der Diebstähle.. In 90% der Fälle (korrigier mich, wenn ich mich irre) sind es die lieben Mitreisenden, die Dich beklauen, und nicht Angestellte oder Personal. Traurig, aber wahr! Daher ist auch 
 						in Hostels gegenüber Hotels das Risiko, dass etwas verschwindet, leider deutlich höher. <br><br>
 						Und nicht nur Deine Unterkunft birgt ein großes Risiko, bestohlen zu werden, sondern vor allem auf Tagestrips unterwegs. <br><br>
-						Aber ? Hilfe naht! ? dafür gibt es einige Helferlein und handliche Geldverstecke, die Dir das Reisen erleichtern und Dich durchatmen lassen.<br>
+						Aber - Hilfe naht! - dafür gibt es einige Helferlein und handliche Geldverstecke, die Dir das Reisen erleichtern und Dich durchatmen lassen.<br>
 						</p>
 					<h3 class=headline> Geldverstecke 10 von 10: Brusttasche oder Bauchgürtel </h3>
 						<p>Ich habe anfangs noch einen Bauchgürtel für meine Dokumente genutzt, später dann aber abgeschafft, nachdem ich gemerkt habe, dass ich ihn nur noch am Flughafen nutze, weil es dann wirklich praktisch ist, alles beisammenzuhaben. 
@@ -261,16 +328,14 @@
 						<p>Auch eine sehr clevere Art, sein Geld zu sichern: im BH! Allerdings habe ich in warmen Ländern oft das nasse Geld am Leib. Also nicht zu empfehlen. In trockenen Regionen habe ich immer ein bisschen Sorge, den Geldschein 
 						doch zu verlieren, daher ist dieses kleine Beutelchen mit dem extra Druckknopf ideal.</p>
 					<h3 class=headline>Geldverstecke 3 von 10: abschließbare Gepäckstücke</h3>
-						<p>Du solltest beim Kauf Deines großen Rucksacks auf jeden Fall darauf achten, dass er abschließbare Reißverschlüsse besitzt! Ich nutze den Osprey Farpoint 40 meist als riesigen Safe. Gemeinsam mit meiner Nummer 1?
+						<p>Du solltest beim Kauf Deines großen Rucksacks auf jeden Fall darauf achten, dass er abschließbare Reißverschlüsse besitzt! Ich nutze den Osprey Farpoint 40 meist als riesigen Safe.
 						</p>
 					<h3 class=headline>Geldverstecke 2 von 10: Umhängetaschen</h3>
 						<p>Ich komme immer mehr von Rucksäcken weg, weil ich nie weiß, was da hinter mir passiert. Und ihn immer wieder von einem kleinen Schloss zu befreien, war mir irgendwann zu lästig. Also habe ich nun wieder eine Umhängetasche 
 						bei mir und bin damit absolut zufrieden. Gibt es für die ganz Unsicheren auch von Pacsafe!</p>
 					<h3 class=headline>Meine absolute Nummer 1: die kleinen Zahlenschlösser</h3>
 						<p>Nichts hat mir so sehr auf meinen Reisen geholfen wie diese kleinen Zahlenschlösser! Ich verschließe damit meinen großen Rucksack, wenn ich unterwegs bin, meine Umhängetasche am Fahrradkorb, wenn ich radle, und die Spinde,
-						die immer mal wieder in Hostels zur Verfügung stehen. Gold wert!!</p> <br><br>
-						Ich nutze nicht (mehr) all diese Utensilien und Geldverstecke selbst. Die Gründe habe ich meist dabei direkt erklärt. Aber das liegt vor allem an meiner Reiseerfahrung und meiner persönlichen Einstellung. Was nicht bedeutet, 
-						dass Du übertrieben paranoid oder absolut nachlässig bist, wenn du mehr oder weniger Wert auf Sicherheit legst.
+						die immer mal wieder in Hostels zur Verfügung stehen. Gold wert!!</p> <br>
 					<h3 class=headline> Bonus-Sicherheits-Tipps</h3>
 						<p>Möchtest Du Dich wirklich absichern, überleg mal, ob Du Dir nicht eine Reiseversicherung zulegen möchtest! Das lohnt sich vor allem, je kürzer Deine Reise ist, denn für Langzeitreisen kann das ordentlich auf das Budget schlagen! 
 						Heb dabei aber alle Rechnungen Deiner Wertsachen gut auf, denn die wirst Du im Schadensfall vorlegen müssen. Auch wird in den wenigsten Fällen der Kaufwert ersetzt, sondern der geschätzte aktuelle Wert. Gut im Kleingedruckten der Versicherung nachlesen!<br><br>
