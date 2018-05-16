@@ -1,0 +1,361 @@
+<!DOCTYPE>
+<html lang="de">
+<head>
+	<title>Zwei Wochen Island</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="BilderIsland/icon.png" />
+	<link rel="stylesheet" href="stylesheetIsland.css" />
+    
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    
+    function conFunction(){
+    document.getElementById("contacts").classList.add('disabled');
+    document.getElementById("box").style.visibility = "visible";
+    var box = $("box");
+        box.animate({
+        top: '10em',
+        width: '20%',
+        marginLeft: '38%',
+        height: '50%',
+        opacity: '0.5'  
+        });
+        box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+}; 
+
+    function outFunction(){
+    document.getElementById("contacts").classList.remove('disabled');
+    $('box').removeAttr('style');
+}; 
+    </script>
+    
+</head>
+    <!-- font-size im .title je nach Zeilenanzahl der Überschrift anpassen ( eine Zeile 5vw, zwei Zeilen 3 vw) -->
+    <!--Positionierung des Textes bei .text je nach Zeilen der Überschrift ( bei einer Zeile Überschrift 18%, bei zwei Zeilen 16%) -->
+    <!-- https://work.smarchal.com/twbscolor/4.0.0/css/f0f8ff86accc7e7e7e7e7e7e1 -->
+    <!-- https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+<body>
+
+
+ <nav class="navbar navbar-expand-md rounded sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-label" style="color:#7e7e7e;" ><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></span>
+        </button>
+        
+    <box id="box"><ueb>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br>
+    
+    Yvonne & Lena<br>
+    28329 Bremen<br>
+    
+    blabla@web.de<br>
+    </box>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="Startseite.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UeberUns.html">Über uns</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lena</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown10">
+                <a class="dropdown-item" href="Japan.html">Japan</a>
+                <a class="dropdown-item" href="Sizilien.html">Sizilien</a>
+                <a class="dropdown-item" href="#">Kapstadt</a>
+              </div>
+            </li>           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yvonne</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown10">
+                <a class="dropdown-item" href="Island.html">Island</a>
+                <a class="dropdown-item" href="Norwegen.html">Norwegen</a>
+                <a class="dropdown-item" href="Malediven.html">Malediven</a>
+              </div>
+            </li>       
+            <li class="nav-item">
+             <a class="nav-link" id="contacts" href="#" onclick="conFunction()">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+	<div id=header>
+
+    <div class=picture><img class=picture src="BilderIsland/islandTitel.jpg" alt="Miyajima"></div>
+	<datum> 23.04.2018 von Yvonne</datum>
+	<div class=title>Roadtrip durch Island</div>
+	
+	<div class=text><p class=mittig>Es ist halb drei Uhr morgens, als ich schlussendlich vor dem Tor zu meinem airbnb-Apartment stehe und die nächtliche Anreise nach Island 
+	endlich sein Ende im Bett findet. Zwar ist es dank Mitternachtssonne draußen so verlockend hell, dass ich am liebsten einfach nur den Koffer abstellen und auf Entdeckungstour 
+	starten möchte, doch die Müdigkeit siegt schlussendlich über mich. Morgen ist auch noch ein Tag und vor mir liegen zweieinhalb Wochen Island.<br><br>
+
+	<ueb>Ein besonderes Apartment</ueb><br><br>
+
+		Wenn ich mich auf eine Unterkunft meines Island-Roadtrips ganz besonders freute, dann war das mein Apartment in Reykjavik gleich zu Beginn der Reise. 
+		Ich fand das Apartment nach längerer Suche und war sofort Feuer und Flamme. Ein paar E-Mails mit Halla später, war mein Aufenthalt bestätigt. So unkompliziert wie die Buchung selbst, 
+		sollte sich auch die Anreise erweisen, die mir zuvor etwas Kopfzerbrechen bescherte. Immerhin landete mein Flug erst kurz vor Mitternacht in Keflavik, womit ich erst gegen halb 
+		drei die Tür zum Apartment öffnen konnte. Dank des zuvor zugesandten Codes für das Eingangstor und das Zimmer selbst, sollte dies allerdings kein Problem darstellen. <br><br>
+		Das Apartment selbst lässt im übrigen keine Wünsche offen. Vielmehr würde ich hier am liebsten einfach meine sieben Sachen nehmen und direkt einziehen. Es ist den beiden gelungen, 
+		skandinavisches Design mit unglaublicher Gemütlichkeit zu schaffen. Das Farbkonzept zieht sich durch alle Räume durch, an Ausstattung mangelt es nirgends. Das Bett ist wirklich bequem, 
+		die Küchenzeile bietet alles, um auch mal selbst für ein Abendessen zu sorgen und im kombinierten Wohnzimmer lässt es sich zwischen all der Stadtbesichtigung auch mal kurz erholen. <br><br>
+		Die Lage selbst ist top. Keine fünf Gehminuten von der bekannten Hallgrímskirkja entfernt, erreicht man fußläufig alle wichtigen Punkte in der Stadt. Buchen kann man die Apartments, 
+		von denen es aktuell drei gibt, entweder direkt per E-Mailanfrage, über Welcome Beyond oder airbnb. Und je nach Reisebegleitung haben hier zwei bis vier Personen Platz.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island1.jpg" alt="Apartment"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island2.jpg" alt="Apartment"></div><br>
+		
+	<ueb>Tag 1: Golden Circle</ueb><br><br>
+
+		Nachdem ich die ersten Tage nach Ankunft in Island damit verbrachte, Reykjavik zu entdecken, der allzu großen Versuchung zahlreicher Designshops zu widerstehen, 
+		mich von einem netten Café und Restaurant zum nächsten zu futtern, sollte es heute schlussendlich mit meinem Roadtrip durch Island so richtig losgehen. 
+		Den Auftakt bildete dabei der Klassiker: die Golden Circle Tour. Und auch wenn ich darauf eingestellt war, dass die Highlights dieser Tour gut besucht sein werden, 
+		war ich dann doch etwas vom großen Touristenandrang überrascht.<br><br>
+		Ausgangspunkt für meine Tour ist das ION Hotel in Nesjavellir. Dank der Lage brauche ich keine 25 Minuten bis zum ersten Stopp, dem Þingvellir National Park. 
+		Dieser Nationalpark ist nicht nur landschaftlich schön, sondern auch von geschichtlich großer Relevanz und darüber hinaus so besonders da hier die amerikanische und die 
+		europäische Kontinentalplatte aufeinandertreffen. Bereits bei der Parkplatzzufahrt zeigt sich, dass hier einiges los ist und so ist es wenig verwunderlich, 
+		dass sich auf der Aussichtsplattform die Besucher nur so drängeln. Kein Wunder, der Nationalpark Þingvellir gehört mitunter zu den meistbesuchten Orten Islands. 
+		So ist auch der Weg hinab in die Schlucht gesäumt von Touristen aus aller Welt. Doch wer diese erstmal hinter sich gelassen hat und auf die vielen Schotterwege ausweicht, 
+		entkommt auch dem großen Andrang. Es lohnt sich jedenfalls, sich Zeit zu nehmen, in Ruhe durch den Nationalpark zu spazieren und etwas weitere Wege zurück zu legen.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island3.jpg" alt="Nationalpark Pingvellir"></div><br>
+		Der zweite Stopp entlang der Golden Circle Route ist zwar nicht weniger touristisch, aber dafür fast noch ein wenig spektakulärer als der Nationalpark. Das Geothermalgebiet Haukadalur 
+		ist wohl einzigartig, wer noch nie zuvor einen Geysir gesehen hat. Namensgebend für den Geysir ist im übrigen der Große Geysir, welcher ebenfalls in Haukadalur zu finden ist. 
+		Aktiv ist er nur leider nicht mehr, so dass man hier vergeblich auf einen Ausbruch wartet. Ganz anders hingegen der Strokkur Geysir. Rund alle zehn Minuten bricht er aus, etwa 
+		30 Meter hoch schießt dabei das Wasser in die Höhe. Und mit etwas Glück erlebt man das Spektakel gleich zwei- bis dreimal hintereinander. In jedem Fall lohnt es sich, etwas Zeit 
+		für das Geothermalgebiet einzuplanen. Nicht zuletzt, da es kleinere, wenig anspruchsvolle Wanderwege gibt und man durch die dampfende und blubbernde Landschaft spazieren kann. 
+		Vielmehr jedoch auch, da es etwas Geduld braucht, wer den Ausbruch des Strokkur auf einem Foto festhalten möchte. Besser immer den Finger am Auslöser lassen…<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island4.jpg" alt="Strokkur"></div><br>
+		Die dritte wichtigste Sehenswürdigkeit entlang der Golden Circle Tour ist der Wasserfall Gullfoss. Sein Name, „Goldener Wasserfall“, ist zugleich Namensgeber für den Golden Circle. 
+		Mein Stopp am Gullfoss fällt sprichwörtlich ins Wasser. Nicht etwa, weil ich an den Aussichtspunkten ein paar Wasserspritzer abbekomme. Nein, vielmehr weil es ausgerechnet dann aus 
+		Eimern zu schütten beginnt, als ich am Parkplatz ankomme. Nützt schlussendlich alles nichts und so arbeite ich mich immer näher an den Wasserfall vor. Der Gullfoss strömt über zwei Stufen 
+		und 32 Meter in die Tiefe, umgeben von einem rund 70 Meter hohen Canyon. Zugegeben, in aller Ruhe kann ich dieses wirklich beeindruckende Naturschauspiel nicht bewundern, da ich innerhalb 
+		kürzester Zeit klatschnass bin. Und so trete ich nach rund zwanzig Minuten wieder den Rückweg zum Auto an.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island5.jpg" alt="Wasserfall"></div><br>
+		Auf dem Weg zu meinem Hotel für diese Nacht würden sich noch zwei weitere Zwischenstopps anbieten – mit einem kleinen Umweg über Reykholt etwa bei Friðheimar, 
+		wo es eine unglaublich gute Tomatensuppe geben soll. Oder in Friður bei der Secret Lagoon, eine natürliche Heißwasserquelle, welche zwar nicht mehr ganz so geheim ist wie der Name 
+		vermuten lässt, aber einen idealen Tagesabschluss verspricht. Ich überlege zwar kurz, entscheide mich dann aber für den direkten Weg ins Hotel Selid, um aus den nassen Sachen herauszukommen 
+		und den Abend fernab von jeglichen Touristenströmen in idyllischster isländischer Landschaft zu verbringen.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island6.jpg" alt="Hotel"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island7.jpg" alt="Hotelzimmer"></div><br>
+
+	<ueb>Tag 2: Das ION Hotel</ueb><br><br>
+	
+		European Hotel Design Awards. Boutique Hotel Awards. Restaurant Design Awards. Mehrfach für Design-Preise nominiert und ausgezeichnet, war für mich klar, dass ich bei meinem 
+		Island-Roadtrip die Gelegenheit nutzen musste und im wohl besten Hotel der Insel schlafen wollte. Die Erwartungen waren entsprechend hoch. Und konnten leider nur teilweise gehalten werden.<br><br>
+		Relativ unscheinbar ist das ION Hotel in Nesjavellir gelegen. Wer die Bilder aus dem Web kennt, würde sich einen eindrucksvollen Bau erwarten. Doch bei der Zufahrt wirkt das Gebäude 
+		weit weniger imposant und groß, als zunächst angenommen. Der Check-In verläuft schnell und unkompliziert, zur Begrüßung gibt es ein Glas Prosecco. Keine fünf Minuten später stehe ich 
+		in meinem Zimmer – der Deluxe-Kategorie. Die freundliche Dame hatte mich bereits beim Check-In darauf hingewiesen, dass mein Zimmer ein besonders nettes Panorama hatte. Und ja, 
+		das konnte sich durchaus sehen lassen. Denn ringsum war – nichts. Die Weite, welche sich vorm großen Panoramafenster offenbart, ist durchaus beachtlich.<br><br>
+		Das Zimmer selbst entspricht jenem Interior-Design, welches man sich heutzutage von einem gehobenen Designhotel erwartet. Wirklich außergewöhnlich fand ich es jedoch nicht. Zugegeben, 
+		das große Bett ist äußerst bequem und der Blick nach draußen durchaus beeindruckend. Ein iPad gehört ebenso zur Ausstattung wie eine Docking-Station. 
+		Welche nur dummerweise mit den neueren iPhones nicht genutzt werden kann.<br><br>
+		Zum ION Hotel gehört mitunter der Lava Spa, was so viel bedeutet wie: Spa-Anwendungen bei Buchung, Sauna und ein 10m langer Außenpool mit angenehm warmen Temperaturen. 
+		Ja, es hat schon was, bei kühlen Temperaturen ins warme Wasser zu steigen und die Aussicht zu genießen. Umso mehr, wenn man die Gelegenheit zu später Stunde nutzt, 
+		wo man den Pool für sich alleine hat, bevor es dann ins warme Bett geht. Ebenfalls zum ION Hotel gehörig ist das vielgelobte Sifra Restaurant, welches ich selbst nicht getestet habe, 
+		und die Northern Lights Bar. Die, wie der Name schon vermuten lässt, wohl vor allem in den dunkleren Monaten ein Highlight ist. Nämlich dann, wenn man von der Bar aus die Nordlichter 
+		am Himmel beobachten kann. Aber auch jetzt, wo es nachts kaum dunkel wird, ist die Bar eine nette Location, um ein Glas zu trinken oder eine Kleinigkeit von der Bar-Karte zu essen.<br><br>
+		Das Frühstück nach einer erholsamen Nacht ist gut, aber für ein Hotel dieser Kategorie nicht wirklich außergewöhnlich. Und wenn das Frühstück ohnehin bereits extra verrechnet wird, 
+		bei Übernachtungspreisen die seinesgleichen suchen, ist es für mich leider auch nicht nachvollziehbar, weshalb ein Cappuccino dann nochmals extra verrechnet wird. Mein Fazit? 
+		Das ION Hotel ist zwar ein modernes und gut gelungenes Hotel. Dafür dass es aber so hoch gelobt wird und über den Maßen teuer ist, sollte man sich zweimal überlegen, 
+		ob es den Preis tatsächlich wert ist.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island8.jpg" alt="Hotel Ausblick"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island9.jpg" alt="Pool"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island10.jpg" alt="Hotelzimmer"></div><br>
+
+	<ueb>Tag 3: Vik</ueb><br><br>
+	
+		Als ob ich geahnt hätte, dass heute ein intensiver Tag vor mir liegt, wache ich bei strahlendem Sonnenschein zeitig auf und sitze bereit kurz nach 9 Uhr wieder im Auto. 
+		Intensiv sollte der Tag allerdings nicht aufgrund der vielen Kilometer werden, die vor mir lagen. Ganz im Gegenteil, rund 130 Kilometer waren mehr als machbar für meine 
+		heutige Etappe nach Vik. Allerdings liegen auf der Strecke so viele Sehenswürdigkeiten, dass ich nicht nur kaum zum Verschnaufen komme, sondern rund zehn Stunden später nicht weiß, 
+		wie man so viele verschiedene Landschaften überhaupt verarbeiten soll.<br><br>
+		Ich steuere also bereits gegen halb zehn meinen ersten Stopp an – den Seljalandsfoss. Schon von Weitem kann man ihn auf der Ringstraße erkennen. Und auch wenn in mir zunächst der 
+		Gedanke aufkam, dass er so spektakulär nicht aussieht – das war definitiv zu früh gedacht. Trotz der frühen Uhrzeit ist bereits einiges los, doch der Andrang ist überschaubar. 
+		Vom Parkplatz geht es wenige Meter bis direkt an den Wasserfall ran, der vor allem deshalb so besonders ist, da man ihn von hinten umgehen kann. Einmal 360° rund um das hinabtosende Wasser 
+		ist ziemlich beeindruckend und zwar zum ersten aber nicht zum letzten Mal am heutigen Tag bin ich froh, dass meine Kamera wasserfest ist. Denn, so sehr die Hinweisschilder auch darüber
+		hinwegtäuschen mögen – nass wird man hier auf alle Fälle. Etwa 500m weiter liegt ein weiterer Wasserfall, welchen man sich auf keinen Fall entgehen lassen sollte. Zugegeben, 
+		ich hätte ihn beinahe verpasst, weil ich nicht mehr am Radar hatte, dass es hier gleich zwei besondere Wasserfälle gibt, aber – alles nochmal gut gegangen. Der Gljúfrabúi 
+		Wasserfall ist nicht minder spektakulär als der bekanntere Seljalandsfoss. Vielleicht auch sogar ein kleines bisschen eindrucksvoller, handelt es sich hierbei doch um einen 
+		Wasserfall in einer Schlucht, welche man zuerst begehen muss, bevor man ihn in voller Pracht bewundern kann. Auch hier lässt es sich kaum vermeiden nass zu werden, doch ein 
+		Stopp ist beinahe ein Muss.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island11.jpg" alt="Wasserfall"></div><br>
+		Die Route führt mich wenige Kilometer weiter bis ans Ende der Straße Nr. 242. Es ist etwas tricky, die Abzweigung nicht zu verpassen, da das Straßenschild vom Gras überwachsen ist. 
+		Selbst wenn man bereits auf die Kreuzung lauert. Mein Ziel ist der Seljavallalaug Pool, schon lange vor meiner Reise eines der absoluten Highlights. Zu vielversprechend sahen die Bilder aus, 
+		die ich davon bereits gesehen hatte. Ein Pool inmitten der Berge Islands, gefüllt mit wohlig warmem Wasser. Ich hatte ja zunächst etwas Sorge, dass ich den Pool womöglich nicht finden würde,
+		denn eine Ausschilderung gibt es nicht und die Beschreibungen im Internet sind etwas vage. Doch wer erstmal das Auto am Ende der 242 abgestellt hat, folgt einfach dem gut ersichtlichen Pfad 
+		und landet nach etwa 10 Gehminuten direkt am Pool. Immerhin: Touristenbusse verirren sich hierhin nicht, dennoch ist der Seljavallalaug schon lange kein echter Geheimtipp mehr. 
+		Das Schwimmen darin ist aber ein Erlebnis für sich.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island12.jpg" alt="Seljavallalaug Pool"></div><br>
+		Vom Seljavallalaug führt die Ringstraße nur wenige Minuten weiter zum nächsten, ebenfalls sehr bekannten und beliebten Stopp: den Skogfoss Wasserfall. 
+		Und dafür gibt es meiner Meinung nach nur ein Wort, welches ihm gerecht wird: imposant. Rund 60 Meter rauscht das Wasser, teilweise auf einer Breite von bis zu 25 Meter, 
+		in die Tiefe. Ein Ausmaß, welches einem erst dann bewusst wird, wenn die winzig klein erscheinenden Menschen davor stehen, um ein Erinnerungsfoto zu knipsen.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island13.jpg" alt="Skogfoss Wasserfall"></div><br>	
+		Es ist schon längst nach Mittag, als ich vom Skogafoss aufbreche. Ich lasse die eher touristisch wirkenden Cafés trotz meines Hungers hinter mir, denn bei der Zufahrt habe ich bei 
+		der letzten Abzweigung zum Parkplatz einen kleinen Fish and Chips-Stand gesehen, welcher süß, ruhig und sehr einladend aussah. Und ja, Mia’s Country Grill, benannt nach der Dame des Hauses, 
+		ein sympathisches junges Paar, ist der perfekte Zwischenstopp. Einmal Fish and Chips samt Pepsi und schon kann es frisch gestärkt weitergehen.<br><br>
+		Eigentlich sollte Dyrhólaey mein nächster geplanter Zwischenstopp sein. Doch wie es der Zufall so will, bog ich spontan nach wenigen Kilometern in eine Straße links ab, 
+		da sie landschaftlich vielversprechend aussah. Ich folgte ihr einige Minuten ohne zu wissen,  wo ich landen würde. Und siehe da, unverhofft sollte ich am Fuße des Sólheimajökull 
+		Gletschers landen, wo einige der geführten Glacier Walks starten. Zwar reichte dafür zum einen nicht meine Zeit, zum anderen war es bereits zu spät, doch über einen einfachen Weg 
+		lässt es sich einige Meter weiter an den Gletscher rankommen und die letzten Ausläufe sehen, welche in einem kleinen Gletschersee ragen.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island14.jpg" alt="Sólheimajökull Gletschers"></div><br>
+		Ich merke langsam den langen Tag in den  Beinen, möchte es mir aber nicht nehmen lassen, auch den geplanten Stopp in Dyrhólaey einzulegen. Dyrhólaey, über die 218 zu erreichen, 
+		ist eine Halbinsel nahe Vik, welche rund 115 Meter in die Höhe ragt und einen 360 Grad-Blick über das Meer, die umliegenden schwarzen Strände bis weit ins Hinterland und zu den Gletschern 
+		offenbart. Kurz vor dem offensichtlichen Ende der Straße führt eine unbefestigte Straße rechts ab und aufs Plateau hinauf, wo mitunter der aus dem Jahr 1927 stammende Leuchtturm zu finden ist. 
+		Die Klippen hier oben am Plateau sind eindrucksvoll und erlauben an vielen Stellen einen direkten Blick nach unten. Dyrhólaey sagt man auch nach, eine gute Location zum Sichten von 
+		Papageientauchern zu sein, doch leider musste ich erfolglos wieder fahren.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island15.jpg" alt="Dyrhólaey"></div><br>
+		Nach einem kurzen Stopp im Icelandair Hotel Vik, zum Einchecken, Rasten und Abendessen fahre ich die Reynisfjara Strand, besser bekannt als Black Sand Beach, zu nehmen. 
+		Ich komme zeitgerecht, als die meisten Touristen schon wieder weg sind und sich die Abendsonne über den Strand erstreckt. Bekannt ist der Strand mitunter für die aus Basalt bestehende 
+		Steinformation, welche einer Kirchenorgel gleicht und derer die Hallgrimskirkja in Reykjavik nachempfunden ist, wie mir wenige Tage zuvor Hrannar auf der Walking Tour durch die Stadt erklärt.
+		Unmittelbar vor diesem Strandabschnitt ragt auch die 66 Meter hohe Felsformation Reynisdrangar aus dem Meer, welcher man nachsagt, Trolle zu sein, welche beim Warten auf einen gestrandeten 
+		Dreimaster zu Stein erstarrten.
+		<div class=picture><img class=picture src="BilderIsland/island16.jpg" alt="Dyrhólaey"></div><br>
+	
+	<ueb>Tag 4: Fjaðrárgljúfur Canyon</ueb><br><br>
+	
+		Nach dem gestrigen, anstrengenden Tag bis nach Vík startet der dritte Tag meines Roadtrips durch Island etwas gemütlicher. Kurz nach 10 Uhr Check-Out und dann die wichtigste Tat des Tages: 
+		Auto betanken. Direkt gegenüber vom Icelandair Hotel Vik befindet sich passenderweise eine Tankstelle mit einem kleinen Shop, so dass ich zugleich ein Frühstück besorgen konnte. 
+		Das erste Mal Tanken in Island klappte ohne weitere Zwischenfälle, denn an diesem Automat war keine Prepaid-Karte sondern lediglich die Kreditkarte erforderlich.<br><br>
+		Es geht die Ringstraße weiter in Richtung Osten und während der Fahrt spielt mein inneres Ich ein kleines Ja-Nein-Ja-Nein-Spiel. Denn eigentlich würde ich verdammt gerne ins Landesinnere, 
+		nach Landmannalaugar, fahren. Doch aufgrund der unbefestigten Straßen, würden sich die knapp 70 Kilometer ziemlich in die Länge ziehen und meine Tagesplanung etwas durcheinander bringen. 
+		Schweren Herzens entscheide ich mich gegen Landmannalaugar und für einen äußerst kleinen Abstecher über die 209 nach Grafarkirkja und über die 208 wieder zurück auf die Ringstraße. 
+		Ein kleiner Kompromiss, der zwar nicht vollkommen entschädigt, mich aber zumindest für einige Kilometer auch abseits der Ringstraße führt.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island17.jpg" alt="209"></div><br>
+		Wieder zurück auf ebendieser steuere ich zielstrebig eines der beiden heutigen Highlights an – den Fjaðrárgljúfur Canyon. 
+		Er ist über die 206 zu erreichen und scheint bei nicht ganz so vielen Touristen am Programm zu stehen. Der Fjaðrárgljúfur ist durch das Gletscherwasser entstanden, 
+		welches sich einen Weg durch die Felsen bahnte und an vielen Stellen bis zu 100m tief und hat eine Länge von ca. zwei Kilometern. Auf der Ostseite des Canyons lässt es sich einen 
+		leichten Pfad nach oben spazieren, um immer wieder die Aussicht nach unten bewundern zu können. Auch wenn der Weg mittendrin vielleicht den Eindruck macht, dass sich der Blick nicht
+		mehr groß ändert und sich der weitere Weg nicht mehr lohnt: unbedingt bis ans Ende gehen, von dort hat man nochmal einen tollen Blick aus dem Canyon raus und kann zudem einige Meter rausgehen.
+		Denn ansonsten sind die exponierten Pfade mittlerweile alle abgesichert und nicht zugänglich. Wieder zurück am Parkplatz lässt sich der Canyon dann auch noch aus der wassernahen
+		Perspektive begehen. Besser kurze Hosen und wasserfeste Schuhe dabei haben, denn sonst steht man schnell an und kommt nicht mehr weiter.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island18.jpg" alt="Fjaðrárgljúfur Canyon"></div><br>
+		Wenn der Vatnajökull Gletscher, der größte Gletscher Islands, immer näher rückt und immer wieder Gletscherausläufe sichtbar werden, lohnt sich der ein oder andere Stopp am Straßenrand, 
+		um das Panorama zu genießen und natürlich auch zu dokumentieren. Im Skaftafell Visitor Center kann man sich über den Gletscher informieren und bei den umliegenden Anbietern auch 
+		Gletschertouren buchen. Da direkt angrenzend ein Campingplatz liegt, ist mir einfach zu viel los und ich entscheide mich weiterzufahren. Unverhofft kommt bekanntlich oft und so soll 
+		ich keine 5 Minuten später doch noch nahe an den Gletscher rankommen. Denn entlang der Ringstraße, kurz nach dem Skaftafell Visitor Center zweigt nach einer kleinen Verengung und 
+		Flußüberquerung eine Schotterpiste nach links ab. Sie führt zum Svínafellsjökull. Ein kleiner Parkplatz, wenige Touristen und in unmittelbarer Nähe zum Gletscher. 
+		Auch wenn es sich hierbei lediglich um die Ausläufe handelt, bekommt man einen ersten Eindruck davon, wie faszinierend und imposant Islands Gletscher sind.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island19.jpg" alt="Vatnajökull Gletscher"></div><br>	
+		<div class=picture><img class=picture src="BilderIsland/island20.jpg" alt="Vatnajökull Gletscher"></div><br>
+	
+	<ueb>Tag 5: Jökulsárlón</ueb><br><br>
+	
+		Ich war in keinster Weise darauf vorbereitet, was mich am heutigen Tag erwarten würde. Zwar habe ich zuvor bereits einiges über die Gletscherlagunen im Web gelesen und zahlreiche Bilder gesehen, 
+		doch diese werden der Realität nichtmal annähernd gerecht. Und so werden auch die nachfolgenden Eindrücke nur ansatzweise wiedergeben (können), was der heutige Tag zu bieten hatte.<br><br>
+		Da ich zwei Nächte im Fosshotel Glacier Lagoon untergebracht bin, konnte ich mir alle Zeit der Welt für die beiden Gletscherlagunen nehmen, welche gerade mal zwanzig Autominuten vom Hotel 
+		entfernt liegen. Zugegeben, nachdem ich endlich mal wieder ausgeschlafen und ausgiebig gefrühstückt hatte, hatte ich leichte Zweifel ob „nur“ die beiden Gletscherlagunen tagfüllend seien. 
+		Im Nachhinein betrachtet bin ich aber froh, dass ich intuitiv die Etappen so geplant hatte, dass ich den ganzen Tag nur dafür eingeplant hatte. Schon die Anfahrt zur ersten Gletscherlagune 
+		schreit förmlich danach, immer mal wieder stehen zu bleiben und das Panorama zu bestaunen. Gletscherausläufe soweit das Auge reicht und dann noch die Ringstraße dazu. Ziemlich cool!<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island21.jpg" alt="#"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island22.jpg" alt="#"></div><br>
+		Ich lenkte also schon nach wenigen Minuten das Auto auf den Parkplatz der Fjallsárlón Glacier Lagoon. Es handelt sich dabei um den kleineren der beiden Gletscherseen, 
+		es lohnt sich aber auch hier zu stoppen, denn das Panorama und die Landschaft sind doch sehr unterschiedlich. Islands größter Vulkan, der Öræfajökull Gletscher, 
+		ragt von der Lagune empor und reicht bis runter zum Wasser, wo Eisberge immer wieder abbrechen und über den See schwimmen bevor sie schmelzen. Ich hatte etwas Pech, denn schon 
+		auf den letzten Metern zum Parkplatz fing es an richtig stürmisch zu werden und so sollte es auch während des Besuchs an der Fjallsárlón Lagune bleiben. Der aufkommende Regen tat 
+		sein übriges und ich verfluchte die Tatsache, dass ich meine Handschuhe natürlich – wie kann es auch anders sein – im Hotel liegen hatte. Ebenso wie beim Jökulsárlón werden am 
+		Fjallsárlón Bootstouren angeboten, ich wollte mir das Erlebnis jedoch für die größere der beiden Gletscherlagunen aufheben.<br><br>
+		Vom Fjallsárlón zum Jökulsárlón sind es dann weitere fünfzehn Minuten Fahrt. Bereits vor Erreichen des offiziellen, großen Parkplatzes, 
+		von wo aus die Touren starten und die meisten zur Besichtigung stehen bleiben, zweigen von der Ringstraße dreimal kurz nacheinander kleine Schotterpisten zu Parkplätzen ab. 
+		Auch wenn auf den ersten Blick nicht ersichtlich ist, weshalb sich hier ein Stopp lohnt – unbedingt stehenbleiben! Denn nach nur wenigen Gehminuten über die ausgewiesenen 
+		Schotterwege gelangt man zum südlichen Ufer der Jökulsárlón Glacier Lagoon und hat ein unglaublich tolles Panorama über den See hinweg. Die Hiking Trails führen hier in beide 
+		Richtungen entlang des Ufers weiter, so dass man ziemlich viel zu Fuß abgehen kann.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island23.jpg" alt="#"></div><br>
+		Das Wetterglück ist schlussendlich doch noch auf meiner Seite, denn als ich das Auto am großen Parkplatz abstelle, ist auch vom stürmischen Wind nichts mehr zu 
+		spüren und die ersten Sonnenstrahlen dringen langsam durch die Wolkendecke. Ich entschließe mich, die Gelegenheit zu nutzen und direkt eine Tour mit einem Amphibienboot zu machen. 
+		Die rund einstündige Tour startet am Land, über einen kurzen Schotterweg geht es dann weiter zum Ufer und infolge direkt rein ins Wasser. Unser Guide erzählt ein paar grundsätzliche
+		Fakten über den Gletschersee und die Eisberge und klopft schlussendlich aus einem größeren Eisblock ein paar kleinere Eiswürfel, damit wir Gletschereis probieren können.<br><br>
+		Tickets für eine Boottour können und sollten (vor allem in Gruppen) am besten vorab online gebucht werden, die Zodiac-Touren sind relativ schnell ausgebucht und so hätte ich dafür 
+		heute gar keine Gelegenheit gehabt. Touren mit dem Amphibienboot starten aber in etwa alle 10 Minuten und sind auch direkt vor Ort noch buchbar. Und auch wenn man mit den Zodiacs näher
+		an die Eisberge rankommt – die Amphibientour war nicht minder spektakulär und eindrucksvoll. Denn so oder so ist man so nah dran an den Eisbergen wie nie.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island24.jpg" alt="#"></div><br>	
+		Nach der Tour nutze ich die Gelegenheit, um im Glacier Lagoon Café einen kleinen Imbiss zu kaufen und setze mich dann ans Ufer, um bei Sandwich, Skyr und Saft die schwimmenden 
+		Eisberge zu beobachten.<br>
+		Frisch gestärkt folgt dann noch ein weiterer Pflicht-Stopp rund um die Gletscherlagune – der so genannte Diamond Beach. Dessen Name kommt nicht von ungefähr, denn hier am Strand 
+		spült es immer wieder Eisberge und Eisblöcke an, welche sich den Weg von der Gletscherlagune ins offene Meer gebahnt haben. Ein ausführlicher Spaziergang den Strand entlang 
+		lohnt sich, denn die wirklich großen Eisberge treiben da, umso weiter man sich vom Parkplatz und vom engen Kanal bei der Brücke weg bewegt. Stundenlang könnte ich hier stehen, 
+		den Wellen zuschauen wie sie über den Eisbergen zusammenbrechen und diese immer wieder drehen. Kein Wunder also, dass ich mir hier mehr als fünf Stunden die Zeit vertrieben habe 
+		und es kaum schaffe, mich von diesem Anblick zu lösen. Was mir schlussendlich nur gelingt, da ich morgen nochmal hier vorbei muss … auf dem Weg nach Höfn. Und da ist ein neuerlicher Halt
+		natürlich Pflicht! Seelöwen habe ich nämlich noch keine gesichtet.<br><br>
+		
+	<ueb>Tag 6: Kleinstadtidylle in Höfn</ueb><br><br>
+	
+		Das mit Island und mir ist ja so: Kaum kehrst du einem Ort den Rücken zu, sitzt im Auto für die nächste Etappe und denkst dir, alles was jetzt kommt kann eigentlich nicht so 
+		beeindruckend sein, wie das, wo du gerade gewesen bist, lenkst du den Wagen über eine kleine Kuppe und steckst inmitten einer neuen, mindestens genauso eindrucksvollen Landschaft. 
+		Nicht eindrucksvoller als das, wo du gerade gewesen bist, sondern anders eindrucksvoll. Aber mindestens genauso gut.<br><br>
+		So ähnlich verlief es zumindest heute. Ich hatte rund 100 Kilometer Fahrt vor mir und konnte den Tag relativ entspannt angehen. Nachdem es mir gestern die Jökulsárlón Glacier Lagoon 
+		so angetan hatte, wollte ich im Vorbeifahren in jedem Fall nochmal einen kurzen Zwischenstopp einlegen. Daraus geworden sind zwar in Summe erst recht wieder zwei Stunden, aber wer weiß schon, 
+		wann ich jemals wieder in den Genuss dieses Anblicks komme. Ich nutzte also die Gelegenheit, parkte mein Auto am Südufer und spazierte den Hiking Trail ans Ufer. Und saß und 
+		beobachtete und beobachtete und beobachtete die Eisberge dahintreiben, auseinander brechen und mit tosendem Lärm ins Wasser klatschen, sah Kajak-Paddler beim Umkippen zu (nicht gelogen!) 
+		und wartete schlussendlich darauf, dass Christine von Lilies Diary ebenfalls zur Gletscherlagune kam. Denn, wie es der Zufall so will ist mit ihr eine weitere Person zeitgleich 
+		mit mir in Island und so verabredeten wir uns für ein kurzes Intermezzo. Daraus geworden sind eben zwei Stunden an der Lagune bzw. am Diamond Beach und im Anschluss ein Mittagessen in Höfn. 
+		Und siehe da: Kurz bevor wir von der Lagune aufbrechen, erblicke ich dann doch noch eine Robbe im Wasser! Zwar ziemlich weit weg und selbst mit Zoom nur schwer vor die Linse zu bekommen,
+		aber bei genauerem Hinsehen ist auf dem rechten unteren Bild ein schwarzes Etwas zu erkennen! Ziel erreicht.<br><br>
+		Weiter also nach Höfn – eben mit genau jenem Gedanken in Gepäck, dass es vermutlich kein großartig spannender Tag wird. 
+		Doch umso länger ich im Auto sitze und im Rückspiegel die Gletscherausläufe immer kleiner werden, wird vor mir die Landschaft hügelig und saftig grün. 
+		Immer mehr Schafe und Pferde säumen den Straßenrand und die größte Sorge neben der Ablenkung durch das Panorama gilt dem Willen der Schafe. Wer weiß, 
+		ob nicht plötzlich eines auf die Idee kommt, vor mir über die Straße zu laufen…<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island25.jpg" alt="#"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island26.jpg" alt="#"></div><br>
+		Die Kleinstadt Höfn liegt am Fuße des Vatnajökull und ist außerdem der Hauptort der Gemeinde Hornafjörður. Keine 2.000 Einwohner leben hier und dennoch wirkt die Stadt aufgrund der Tatsache,
+		dass ich seit Verlassen von Reykjavik in keinem größeren Ort mehr gewesen bin, relativ groß. Neben dem Hafen, welcher Höfn einst seine Bedeutung als Fischer- und Handelsort gab, 
+		gibt es in Höfn alles an relevanter Infrastruktur, was Einheimische und Touristen gleichermaßen benötigen. Tankstelle, Supermarkt, Vínbúð (Alkohol-Shop), Apotheke sowie ein für eine Stadt 
+		dieser Größenordnung ziemlich großes Schwimmbad. Außerdem befinden sich in Höfn zahlreiche Restaurants, die nicht nur äußerst gemütlich und einladend sondern darüber hinaus auch für den 
+		Lobster bekannt sind. Immerhin hat sich Höfn über die Jahre hinweg mit dem Lobster einen Namen gemacht und veranstaltet mittlerweile einmal im Jahr ein „Lobster Festival“.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island27.jpg" alt="#"></div><br>
+		Erstaunlich auch, dass Höfn einiges an Kultureinrichtungen zu bieten hat. So gibt es etwa ein Heimatmuseum, ein Schifffahrtsmuseum und ein Kunstmuseum, das Vatnajökull Visitor Center, 
+		das zugleich Touristeninformation ist, ist zudem eine Art Gletschermuseum und bietet einiges an (interaktiven) Informationen zum Vatnajökull. Nach einer traditionellen Meat 
+		Soup im Kaffihornið und Kaffee und Kuchen im Nyhöfn Nordic Bistro heißt es jetzt erstmal den Tag gemütlich ausklingen lassen, um morgen dann nochmals Höfn und den Vatnajökull 
+		National Park zu erkunden.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island28.jpg" alt="#"></div><br>
+		
+	<ueb>Tag 7: Stokksnes und ein Ausflug in die Werkstatt</ueb><br><br>
+	
+		Nach all den Gletschern und Eisbergen der vergangenen Tage war es heute an der Zeit für ein Kontrastprogamm. 
+		Mein Ziel ist Stokksnes, eine Landzunge rund 12 Kilometer östlich von Höfn. Als Tipp vorweg: Die Abzweigung auf die Schotterpiste nach Stokksnes kommt etwas unerwartet 
+		und ehe man sich’s versieht, ist man auch schon dran vorbei. Da wenige Meter nach der Abzweigung ein 1.300 Meter langer Tunnel folgt, ist erstmal keine Umkehrmöglichkeit gegeben. 
+		Also erstmal durch den Tunnel durch, ein paar Meter weiter, dann wenden und wieder zurück. Hat man die richtige Abzweigung genommen, geht es erstmal einige Kilometer auf 
+		einem Schotterweg die Küste entlang, bis man schlussendlich am Viking Café landet, wo für das Auto zunächst mal Schluss ist.<br><br>
+		Auf den ersten Blick nicht ersichtlich: Egal ob mit oder ohne Auto, ab dem Viking Café geht es erstmal nur weiter, wer zuvor € 6,- „Eintritt“ bezahlt hat.
+		Ich war etwas überrascht, dass man sich hier den Strandzugang bezahlen lässt, da der Strand jedoch so schön sein sollte, wollte ich nicht wieder umkehren. 
+		Die nette Dame im Café belehrte mich dann jedoch eines besseren und händigte mir erstmal eine Karte zur Orientierung aus, damit ich wusste, was es alles zu sehen gibt.<br><br>
+		Denn was ich nicht wusste: Stokksnes hat nicht nur einen äußerst sehenswerten Strand, sondern zudem ein altes Wikingerdorf, welches man besuchen kann. 
+		Der Witz an der Sache folgt dann aber im nächsten Atemzug. So täuschend echt wie das Wikingerdorf von der Ferne auch aussehen mag – es handelt sich lediglich um eine Attrappe. 
+		Das Dorf wurde als Filmlocation errichtet, für einen Film, welcher aus Finanzierungsgründen schlussendlich nie gedreht wurde. Die Landbesitzer ließen die Kulisse schlauerweise erstmal 
+		stehen und lassen Touristen nun für die Besichtigung bezahlen. Aber, ganz umsonst soll die Mühe nicht gewesen sein, denn angeblich beginnen im nächsten Jahr die Dreharbeiten zum Film Vikingr, 
+		ein Film des isländischen Regisseurs Baltasar Kormákur.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island29.jpg" alt="#"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island30.jpg" alt="#"></div><br>
+		Nach einigen Fotos spaziere ich die 10 Gehminuten zurück zum Viking Café, schnappe mir das Auto und fahre die letzten Meter die Landzunge in Richtung Leuchtturm raus 
+		(ebenfalls nur gegen Bezahlung erlaubt). Ich hatte die Hoffnung, dass mir die Dame im Café nicht allzu viel versprochen hat und ich diesmal Robben aus nächster Nähe sehen würde – doch leider, 
+		wieder nichts. Egal, denn der Strand entschädigt voll und ganz. Der schwarze Sandstrand liegt am Fuße des Vestrahorn, einem 454 Meter hohen Berg direkt am Atlantischen Ozean. 
+		In Kombination mit den Lavadünen, welche zum Strand hin abfallen ein landschaftlich wirklich eindrucksvolles Panorama. Bei strahlendem Sonnenschein und warmen Temperaturen lasse ich es mir
+		schlussendlich nicht nehmen, die Schuhe auszuziehen und zumindest mit den Füßen im Wasser herum zu plantschen. Zwar in den ersten Sekunden etwas eisig, aber der von der Sonne schön 
+		warme, schwarze Sand gleicht das schnell wieder aus.<br><br>
+		<div class=picture><img class=picture src="BilderIsland/island31.jpg" alt="#"></div><br>
+		<div class=picture><img class=picture src="BilderIsland/island32.jpg" alt="#"></div><br>
+		Auf dem Weg zurück geht’s nochmal zu einem Abstecher nach Höfn – Mittagessen und Tank auffüllen. Ein empfehlenswerter Tipp ist das Pakkhús Restaurant, 
+		direkt am Hafen gelegen. Dabei handelt es sich um ein renoviertes Lagerhaus aus dem Jahr 1932, auf der Speisekarte stehen hauptsächlich Gerichte mit lokalen Zutaten, 
+		allen voran natürlich dem isländischen Lobster, der vom Schiff Sigurður Ólafsson SF 44 kommt, welches meist direkt vor der Tür ankert.<br><br>
+		Ziemlich ungeplant gestaltete sich dann der Rest des Nachmittags. Eigentlich sollte es ein kurzer Zwischenstopp im Hotel werden, als ich beim Einparken 
+		eine Beule am rechten Vorderrad entdeckte. Der Twitterrat tagte was zu tun ist und schlussendlich packte ich nochmal meine Sachen und fuhr zurück nach Höfn, 
+		um mich bei der Tankstelle nach einer Werkstatt zu erkundigen. So vage die Beschreibung auch war („Zwischen den beiden Tankstellen links die Straße rein, dann nochmal die zweite links, 
+		dort steht dann vielleicht ein Bus. Da bist du dann richtig.“), so goldrichtig war der Tipp. Ich stand offensichtlich vor einer (geschlossenen) Werkstatt. Was also tun? Richtig, 
+		iPhone aus der Tasche ziehen, angeschlagene Nummer anrufen und meinen Helden des Tages von seiner Wohnung auf der anderen Straßenseite zu mir holen. Gesagt, getan. Innerhalb einer 
+		weiteren halben Stunde hatte ich also einen neuen Reifen und € 226,- weniger in der Tasche. Alles andere als ein Schnäppchen, aber nützt alles nichts und immerhin war ich innerhalb 
+		von eineinhalb Stunden wieder mobil. An dieser Stelle ein Hoch auf Gudrandur Jóhannsson, meinen Held des heutigen Tages und zugleich der Mann hinter Vatnajökull Travel. 
+		Also tut mir den Gefallen und bedankt euch für mich, indem ihr eine Tour bei ihm bucht.<br><br>
+</p></div>
+	
+</div>
+
+<!-- https://homeiswhereyourbagis.com/japan-tipps-highlights/ -->
+</body>
+</html>
