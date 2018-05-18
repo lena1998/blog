@@ -13,33 +13,19 @@
         x.classList.toggle("change");
     }
     
-function conFunction(){                                                                     //Ausfahren der Kontaktbox, bezogen auf die Screengröße
-    if (window.matchMedia('(max-width: 991px)').matches){                                   //Screen kleiner als 991px                                               
-        document.getElementById("contacts").classList.add('disabled');
-        document.getElementById("box").style.visibility = "visible";
-        var box = $("box");
-            box.animate({
-            top: '300px',
-            width: '20%',
-            marginLeft: '38%',
-            height: '50%',
-            opacity: '0.5'  
-            });
-            box.animate({width: '200px', height: '300px', opacity: '1'}, "slow"); 
-    }else{
-        document.getElementById("contacts").classList.add('disabled');
-        document.getElementById("box").style.visibility = "visible";
-        var box = $("box");
-            box.animate({
-            top: '10em',
-            width: '20%',
-            marginLeft: '38%',
-            height: '50%',
-            opacity: '0.5'  
-            });
-            box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
-        } 
-};
+    function conFunction(){
+    document.getElementById("contacts").classList.add('disabled');
+    document.getElementById("box").style.visibility = "visible";
+    var box = $("box");
+        box.animate({
+        top: '10em',
+        width: '20%',
+        marginLeft: '38%',
+        height: '50%',
+        opacity: '0.5'  
+        });
+        box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+	}; 
     function outFunction(){
     document.getElementById("contacts").classList.remove('disabled');
     $('box').removeAttr('style');
@@ -99,7 +85,7 @@ function conFunction(){                                                         
 
 	<div id=header>
 
-		<div class=picture><img class=picture src="Bilder/images.jpg" alt="Küste"></div>
+		<div class=picture><img class=picture src="BilderUeberUns/images.jpg" alt="Küste"></div>
 		<div class=title>Über uns </div>
 		<div class=underTitle> Moin! Schön, dass du da bist</div>
 	
@@ -120,11 +106,17 @@ function conFunction(){                                                         
 	
 		<sUeb>Wovor hast du am meisten Angst?</sUeb><br><br>
 	
-		...<br><br>
+		Davor, verletzt zu werden. Ich habe oft bemerkt, dass mich sowas lange beschäftigt und mein Menschenbild stark verändert hat. 
+		Trotzdem habe ich es lange nicht geschafft, die Menschen, die mich verletzt haben aus meinem Leben zu streichen. 
+		Ich bin ein Gewohnheitsmensch und Veränderungen dieser Art und Weise sind schwer für mich zu akzeptieren. Die Angst hat mich so stark geprägt , 
+		dass sie oft im Vordergrund steht wenn ich neuen Menschen begegne. Ich hasse dieses Gefühl einfach, von jemandem verletzt zu werden, dem man vorher 
+		vertraut hat oder den man anders eingeschätzt hat.<br><br>
 	
 		<sUeb>Was war dein persönlicher Kindheitsheld und warum?</sUeb><br><br>
 		
-		...<br><br>
+		Mein persönlicher Kindheitsheld war meine Mama. Ich sehe schon immer zu ihr auf, wie sie ihr Leben meistert und sich nicht unterkriegen lässt. 
+		Sie hat immer ihr Bestes gegeben, egal welche Krankheit oder welche Vorfälle dazwischen kamen. Auch lässt sie sich nicht so stark von anderen beeinflussen, 
+		sie nimmt gut gemeinte Kritik an, lässt sich aber nicht durch andere Meinungen verbiegen oder unterkriegen.<br><br>
 	
 		<sUeb>Welche Superkraft würdest du wählen, wenn du die Wahl hättest?</sUeb><br><br>
 		
@@ -132,27 +124,36 @@ function conFunction(){                                                         
 		
 		<sUeb>Dein letzter Moment voller Glückseligkeit?</sUeb><br><br>
 		
-		...<br><br>
+		Ich habe vor kurzem mit meinem Freund einen Kurzausflug ans Meer gemacht, und einfach am Ufer langzulaufen, über das Wasser zu gucken und das schöne Wetter zu genießen 
+		war ein schöner Ausbruch aus dem Alltag. Natürlich haben wir auch etwas leckeres gegessen. Es war schön, dass es so entspannt war, auch wenn es nicht groß geplant gewesen ist 
+		und ich diesen Moment mit meinem Freund genießen konnte.<br><br>
 	
 		<sUeb>Wenn du nur noch einen Tag zu leben hättest, was würdest du tun?</sUeb><br><br>
 		
-		...<br><br>
+		Ich würde den Tag mit meiner Familie und meinem Freund verbringen, aber ich würde nichts Großes machen. Ich würde versuchen den Tag mit vielen kleinen, schönen Momenten zu füllen, 
+		damit diese den anderen in Erinnerung bleiben und sie sich gerne daran zurückerinnern. Und ich würde mir einen Hund für diesen Tag besorgen!<br><br>
 		
 		<sUeb>Wenn du ein Prominenter sein könntest, welcher wärst du gern?</sUeb><br><br>
 		
-		...<br><br>
+		Ich wäre ungern ein Prominenter, da ich nicht gerne im Rampenlicht stehe. Ich sitze viel zu gerne in Jogginghose auf der Couch, als dass ich zu Terminen gehe oder immer nur gestylt 
+		aus dem Haus gehen könnte.<br><br>
 	
 		<sUeb>Was war der letzte Film, der dich zu Tränen gerührt hat?</sUeb><br><br>
 		
-		...<br><br>
+		Puh, ich weiß es schon gar nicht mehr. Ich schaue sehr selten Filme, aber ich kann mit Sicherheit sagen, dass so gut wie alle Disneyfilme mich irgendwann zum Weinen bringen sowie jeder Film, 
+		der eine tragische Geschichte hat. Egal ob es ein Happy End gibt oder nicht. Deswegen gucke ich mir so welche Filme auch nur sehr selten an, da ich 100% weinen werde.<br><br>
 		
 		<sUeb>Welche 3 Dinge würdest du mit auf eine einsame Insel nehmen?</sUeb><br><br>
 		
-		...<br><br>
+		Etwas zur Beschäftigung, zum Beispiel ein Buch oder mein DS. Ich gehe einfach mal davon aus, dass es dort Strom gibt. Außerdem würde ich mein Handy mitnehmen, 
+		alleine schon wegen der Musik die darauf gespeichert ist oder wegen der Spiele, und um mit anderen telefonieren zu können. Und wahrscheinlich noch mein Bett, ich schlafe ungerne 
+		in fremden Betten und ich liebe mein Bett einfach.<br><br>
 	
 		<sUeb>Wenn du für einen Tag die Welt regieren könntest, mit uneingeschränkter Macht: Was würdest du als erstes ändern?</sUeb><br><br>
 		
-		...<br><br>
+		Ich würde ein Gesetz erlassen, dass nur noch umweltfreundliche Technologien zur Stromversorgung genutzt werden dürfen und nur noch E-Autos erlaubt sind. Überall. 
+		Auf der ganzen Welt. Wenn immer nur die Hälfte sich an die Vorschriften hält, wird sich die Umweltverschmutzung nie verbessern und es wird auch nie dazu kommen, 
+		dass neue Technologien zu genüge eingesetzt werden. Deswegen sollte es weltweit Vorschrift sein.<br><br>
 		
 		<ueb>Yvonne</ueb><br><br>
 		<div id="trennlinie">&nbsp;</div><br>
@@ -174,7 +175,8 @@ function conFunction(){                                                         
 		
 		<sUeb>Was war dein persönlicher Kindheitsheld und warum?</sUeb><br><br>
 	
-		...<br><br>
+		Meine Mutter. Sie war der Inbegriff von "Held" in meinen Augen. Sie musste sehr viele Schicksalsschläge einstecken, hat sich aber nie unterbringen lassen. Sie hat immer gekämpft und das
+		Beste aus der Situation gemacht. Sie hat uns gelehrt Hilfsbereit, Lebensfroh und Verständnisvoll zu sein. <br><br>
 	
 		<sUeb>Welche Superkraft würdest du wählen, wenn du die Wahl hättest?</sUeb><br><br>
 		
@@ -183,7 +185,8 @@ function conFunction(){                                                         
 		
 		<sUeb>Dein letzter Moment voller Glückseligkeit?</sUeb><br><br>
 	
-		...<br><br>
+		Ich war mit meinem Freund im Winter auf der Semkenfahrt. Ein geflutetes Feld, was als Eislaufbahn freigegeben wird. Hin und zurück sind es bestimmt 6 Kilometer. Es war ein toller Tag, 
+		schönes Wetter, tolle Stimmung. Einfach mal abgeschalten.<br><br>
 	
 		<sUeb>Wenn du nur noch einen Tag zu leben hättest, was würdest du tun?</sUeb><br><br>
 		
@@ -197,7 +200,8 @@ function conFunction(){                                                         
 	
 		<sUeb>Was war der letzte Film, der dich zu Tränen gerührt hat?</sUeb><br><br>
 		
-		...<br><br>
+		Oh, da gibt es einige. Aber der Letzte Film war "Irreplaceable You". Ein Pärchen, die große Liebe seit dem Kindergarten, plant das erste Baby. Sie denkt sie wäre Schwanger und geht zum Arzt, 
+		welcher ihr dann sagt, dass sie Krebs habe und nicht mehr lange leben wird. Blablabla. Ende vom Lied, (Spoileralarm!!) sie stirbt vor dem Tag ihrer Hochzeit und bei mir flossen die Tränen. <br><br>
 		
 		<sUeb>Welche 3 Dinge würdest du mit auf eine einsame Insel nehmen?</sUeb><br><br>
 	
@@ -208,7 +212,8 @@ function conFunction(){                                                         
 	
 		<sUeb>Wenn du für einen Tag die Welt regieren könntest, mit uneingeschränkter Macht: Was würdest du als erstes ändern?</sUeb><br><br>
 		
-		...<br><br>
+		Alle Mittel zur Bekämpfung von HIV, Krebs und jeglichen anderen Krankheiten, für die Öffentlichkeit bereitstellen. Es werden unfassbar viele Medikamente "verheimlicht", die 
+		vielen Menschen das Leben retten könnten. <br><br>
 		
 	</p></div>
 	</div>
