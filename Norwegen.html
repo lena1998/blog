@@ -1,0 +1,239 @@
+<!DOCTYPE>
+<html lang="de">
+<head>
+	<title>Norwegen</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="Bilder/icon.png" />
+    <link rel="stylesheet" href="stylesheetNorwegen.css">
+    
+    <script>
+    function myFunction(x) {                                                                //Ausklappen der Navigationsbar
+        x.classList.toggle("change");
+    }
+    
+function conFunction(){                                                                     //Ausfahren der Kontaktbox, bezogen auf die Screengröße
+    if (window.matchMedia('(max-width: 991px)').matches){                                   //Screen kleiner als 991px                                               
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '300px',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '200px', height: '300px', opacity: '1'}, "slow"); 
+    }else{
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '10em',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+        } 
+};
+    function outFunction(){                                                                 //Einklappen der Kontaktbox
+    document.getElementById("contacts").classList.remove('disabled');
+    $('box').removeAttr('style');
+}; 
+    </script>
+    
+</head>
+    <!-- font-size im .title je nach Zeilenanzahl der Überschrift anpassen ( eine Zeile 5vw, zwei Zeilen 3 vw) -->
+    <!--Positionierung des Textes bei .text je nach Zeilen der Überschrift ( bei einer Zeile Überschrift 18%, bei zwei Zeilen 16%) -->
+    <!-- https://work.smarchal.com/twbscolor/4.0.0/css/f0f8ff86accc7e7e7e7e7e7e1 -->
+    <!-- https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+<body>
+
+ <nav class="navbar navbar-expand-md rounded sticky-top">                                   <!--Navigationsbar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-label" style="color:#7e7e7e;" ><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></span>
+        </button>
+        
+    <box id="box"><ueb class=sm>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br> <!--Kontaktbox-->
+    
+    Yvonne & Lena<br>
+    28329 Bremen<br>
+    
+    blabla@web.de<br><br>
+    
+    </box>                                                                                                          <!--Kontaktbox Ende-->
+
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="Startseite.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="UeberUns.html">Über uns</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lena</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="Japan.html">Japan</a>
+            <a class="dropdown-item" href="Sizilien.html">Sizilien</a>
+            <a class="dropdown-item" href="Kapstadt.html">Kapstadt</a>
+          </div>
+        </li>           
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yvonne</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="Island.html">Island</a>
+                <a class="dropdown-item" href="Norwegen.html">Norwegen</a>
+                <a class="dropdown-item" href="Malediven.html">Malediven</a>
+          </div>
+        </li>       
+        <li class="nav-item">
+         <a class="nav-link" id="contacts" href="#" onclick="conFunction()">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>                                                                                <!--Navigationsbar Ende-->
+
+
+<div id=header>                                                                         <!-- Mittlerer weißer Streifen -->
+
+<div class=picture><img class=picture src="BilderNorwegen/titel.jpg" alt="#"></div>        <!--Titelbild -->
+<datum> 13.04.2018 von Yvonne</datum>                                                                     <!--Datum und Autor-->
+<div class=title>Ein Roadtrip durch Norwegen</div>                               <!--Überschrift im Bild-->
+
+<div class=text><p class=mittig>Endlich Norwegen. Das Land voller Fjorde, roter Holzhäuser und Elche. 
+Ich war gespannt, ob mir dieser Teil Skandinaviens ebenso gut gefallen würde wie Schweden, das ich im vergangenen Jahr viel zu kurz gesehen, 
+aber sofort in mein Herz geschlossen hatte. Zeitlich musste ich mich jetzt nach den rar gesäten Terminen der baldigen Fähre nach Island richten, 
+wodurch mir nun zwei Wochen für die Entdeckung Norwegens zur Verfügung standen. Und vor diesem Hintergrund stand auch automatisch die Route fest…<br><br>
+
+Es würde eine Rundreise durch den Süden Norwegens werden. Den weiten Weg Richtung Polarkreis bis zur Inselgruppe der Lofoten und des Nordkaps 
+würde ich auf ein anderes Mal verschieben müssen, obwohl mich die Fotos von beidem immer wieder vom Hocker reißen. Aber der Süden würde auch 
+seine Reize haben und so entschied ich mich bei der Wahl des Startpunkts für die Hauptstadt Norwegens.<br><br>
+
+Die Fähre von Dänemark legte in Langesund an, das 170 km von Oslo entfernt liegt. Während mich die Sonne über viele Wochen lang begleitet hatte, 
+war damit ab sofort Schluss. Nach nur wenigen Kilometern Fahrt geriet ich in einen Hagelschauer, für den selbst der Turbo-Scheibenwischer nicht 
+schnell genug war und der alle Autofahrer im Nebel der Autobahn auf die Bremse treten ließ. Ich steuerte eine Tankstelle an, 
+um die Nadel der Tankanzeige wieder in den grünen Bereich zu bewegen und wollte meinen Augen nicht trauen, 
+als ich die norwegische Krone des Benzin-Literpreises in Euro umrechnete: 1,85 €.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img1.jpg" alt="Shinkansen"></div><br>
+
+Darauf erstmal eine Stärkung in Form von Koffein und Zucker, dachte ich mir, und parkte gleich gegenüber eines nett eingerichteten 
+Schnellrestaurants. Thermoskannen-Kaffee und ein Stück Kuchen für 9 Euro. Wie sollte das weitergehen, 
+fragte ich mich, und die Antwort kam schneller als gedacht: Der Campingplatz in Oslo sollte 40 Euro die Nacht kosten und war 
+damit mindestens doppelt so teuer wie in den bisherigen Ländern. Es mussten dringend Alternativen her, sonst würde Norwegen 
+zu viel von meinem Ersparten auffressen.<br><br>
+
+Zum ersten Mal auf dieser Reise hatte meine Laune einen Tiefpunkt erreicht und das verrückter Weise in einem Land, 
+in dem offenbar die glücklichsten Menschen leben. Ich suchte mir den günstigsten Stellplatz mit Blick auf einen kleinen Hafen 
+und wunderte mich jetzt nicht mehr, dass die kurze Busfahrt ins Zentrum satte 6 Euro kostete. Nun gut, ich befand mich in der 
+bekanntlich teuersten Stadt der Welt und das bei strömendem Regen, der auch am zweiten und dritten Tag nicht nachlassen wollte.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img2.jpg" alt="Shinkansen"></div><br>
+
+Dann kehrte ich der Hauptstadt den Rücken und startete mit der Fahrt der Süd-Runde gegen den Uhrzeigersinn. 
+Den vorgegebenen Streckenabschnitten meines kleinen Reiseführer folgte ich gedankenlos. Kleinere und größere Orte und in 
+Nebel gehüllte Seen lagen auf der Route, bis ich im Ort Lillehammer anhielt und mir im Museums-Café bei einem heißen Kakao vorzustellen versuchte, 
+wie schön dieser Ort wohl bei winterlichem Schnee aussehen möge.<br><br>
+
+Als ich meine Kapuze aufzog und das Café verließ, schlug mir wieder der Regen ins Gesicht. Am Ende landete ich im Rondane Nationalpark, 
+der die meines Erachtens beste Variante des Campings anbietet: Hotel und Stellplatz in einem, d. h. man kann alle Annehmlichkeiten des 
+Hotels in Anspruch nehmen, übernachtet draußen und zahlt dennoch einen (verhältnismäßig) günstigen Preis.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img3.jpg" alt="Shinkansen"></div><br>
+
+Weiter ging es bis nach Andalsnes, wo nun auch die aufregende Fahrt über die legendäre Serpentinenstraße Trollstigen anstand: 
+11 Haarnadelkurven bei 9% Steigung, nach deren Bewältigung man oben am sehr modernen Viewpoint wieder einen Blick an den Punkt werfen kann, 
+von dem man unten gestartet ist (sofern der Nebel nicht die Sicht versperrt).<br><br>
+
+Als leidenschaftlicher Café-Sitzer verkniff ich mir diesmal trotz der optischen Verlockung meine mindestens 10 Euro teure Kaffee- und Kuchen-
+Pause und steuerte Richtung Geirangerfjord, einem der bekanntesten und sehenswertesten Fjorde Norwegens, den ich am nächsten Tag mit einer 
+Fähre durchqueren würde.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img4.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img5.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img6.jpg" alt="Shinkansen"></div><br>
+
+Eines der größten Vorteile des Campings allgemein ist übrigens, dass sich viele Stell- und Campingplätze an unschlagbaren Stellen befinden, 
+die bei einer Übernachtung in einem Hotel – mit diesem Ausblick – wahrscheinlich ein Vermögen kosten würden; bei einem Camping- oder Stellplatz 
+aber bleibt es bei einer recht kleinen Summe von bis zu 30 Euro pro Nacht.<br><br>
+
+Die Fahrt mit der Fähre über das tiefgrüne Wasser des Geirangerfjords von Geiranger nach Hellesylt (40 Euro inkl. Auto) führte in der etwas 
+mehr als einen Stunde vorbei an steilen, bewaldeten Bergen mit ein paar einsamen, zum Teil verlassenen Bauernhöfen und vielen Wasserfällen, 
+von denen die sogenannten “Sieben Schwestern” nebeneinander bis zu 300 m in die Tiefe stürzen.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img7.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img8.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img9.jpg" alt="Shinkansen"></div><br>
+
+Wieder auf festem Boden begleiteten mich die dunklen Wolken auf der weiteren Fahrt wie ein Schatten und ich konnte mich mittlerweile nicht 
+mehr der Frage entziehen, woran es denn nur lag, dass ich mit Norwegen nicht so wirklich warm werden wollte. Die vielen Wälder, 
+die dunklen Seen, die ich auf den Küstenstraßen fast permanent im Blick hatte, und nicht zuletzt die unzähligen Berge, Täler und 
+Schluchten hätten mein Herz als Naturliebhaber eigentlich im Sturm erobern müssen. Aber es passierte  nicht. Vielleicht lag es am 
+inzwischen siebten Regentag, der lediglich ein paar sonnige Momente zuließ; vielleicht war es eine mir bislang unbekannte Erscheinung 
+des Langzeitreisens… ich wusste es nicht.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img10.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img11.jpg" alt="Shinkansen"></div><br>
+
+Wenn man sich die Küsten des Landes auf der Karte ansieht, fällt nicht direkt auf, dass viele Orte – selbst weiter im Landesinneren – 
+durch Wasser voneinander getrennt sind. Dadurch ist es nicht ungewöhnlich, dass man auf dem Weg nach Süden entlang der Westküste insgesamt 
+mehr als 100 km durch dunkle, zum Teil schwach beleuchtete Tunnel fährt (nicht geeignet für Klaustrophobiker!) und in meinem Fall etwa acht
+Fähren nutzt, was zusätzlich ins Geld geht. Immerhin habe ich hierbei den ersten Kreisverkehr unter Tage erlebt und das ist eine mehr als 
+beeindruckende, zudem in einem spacigen Blau beleuchtete Erfahrung.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img12.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img13.jpg" alt="Shinkansen"></div><br>
+
+Ab dem Ort Haugesund im Südwesten gefiel mir die Landschaft zunehmend besser. Kleine Orte von großen Felsen umringt mit Blick auf klares, 
+türkises Wasser und fantastische Küstenstraßen, die durch eine außergewöhnliche Landschaft führten. Manchmal sah es so aus, als hätte ein 
+Riese die monströsen, runden Felsbrocken wild in der Gegend verteilt und mit seinen Fußspuren tiefe Seen gebildet.<br><br>
+
+Und zwischendurch tauchten ab und an ganz abgelegen und still moderne Holzhäuser auf, was mich immer wieder zu der Frage verleitete, 
+ob man in dieser Einsamkeit und Abgeschiedenheit mit den Nachteilen der schlechten Infrastruktur und mangelnden Gesellschaft von Nachbarn 
+auf Dauer wirklich glücklich sein kann.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img14.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img15.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img16.jpg" alt="Shinkansen"></div><br>
+
+Je mehr ich Richtung Süden kam, umso gemütlicher wurde es. Vielleicht hat das der Süden allgemein so an sich oder es lag tatsächlich am Wetter. 
+Bei meiner gesamten Strecke war ich zwar natürlich auf Regen und starke Winde vorbereitet gewesen, aber wenn dann tatsächlich die Situation eintritt, 
+neun Tage lang fast ununterbrochen Regen zu haben und man sich dadurch zwangsläufig auf 9 m² mit Schlafen, Kochen und Wohnen in dieser Feuchtigkeit 
+arrangieren muss, ist das mental schon ein wenig anspruchsvoll. Aber nun war die Sonne da und es war endlich an der Zeit, die Seen und Strände 
+von Flekkefjord und Mandal besser kennenzulernen.<br><br>
+
+<div class=picture><img class=picture src="BilderNorwegen/img17.jpg" alt="Shinkansen"></div><br>
+<div class=picture><img class=picture src="BilderNorwegen/img18.jpg" alt="Shinkansen"></div><br>
+
+Inzwischen hatte die Nebensaison begonnen und das wirkte sich auch gleich in einer äußerst angenehmen Ruhe aus. 
+In Kristiansand im Süden endete meine Reise durch Norwegen, das am Ende doch noch viele unerwartet schöne Momente bereithielt. 
+Auf dem Weg zur Fähre, die mich zurück nach Hirtshals im Norden Dänemarks bringen würde, begann mein Lenkrad merkwürdig zu schlackern. 
+Nicht auszumalen, wenn mich der Wagen jetzt im Stich ließe, da bereits am nächsten Tag – einem Samstag – die Fähre nach Island ablegen würde…<br><br>
+
+<ueb>Reisetipps für Norwegen mit dem Auto:</ueb><br><br>
+<ueb>Schöne Stell- oder Campingplätze, meist mit Hütten für Autofahrer:</ueb><br><br>
+– Oslo: Sjølyst Marina Stellplatz<br>
+– Rondane Nationalpark: Fjellhotel<br>
+– Geiranger: Grande Hytteutleige<br>
+– Loen: Tjugen<br>
+– Voss (Nähe Bergen): Faulen<br>
+– Haugesund: Haraldshaugen<br>
+– Flekkefjord: Egenes (Stellplatz nutzen!)<br>
+– Mandal Beach: Sjosanden<br>
+
+</p></div>                                                                                                      <!--Ende Text-->
+	
+</div>                                                                                                          <!-- Mittlerer weißer Streifen Ende -->
+
+<!-- http://travel-story.ch/2016/01/30/malediven-mirihi-island-resort/ -->
+</body>
+</html>
