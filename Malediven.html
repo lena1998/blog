@@ -1,0 +1,180 @@
+<!DOCTYPE>
+<html lang="de">
+<head>
+	<title>Malediven - Mirihi</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="Bilder/icon.png" />
+    <link rel="stylesheet" href="Bilder/Japan/stylesheetJapan.css">
+    
+    <script>
+    function myFunction(x) {                                                                //Ausklappen der Navigationsbar
+        x.classList.toggle("change");
+    }
+    
+function conFunction(){                                                                     //Ausfahren der Kontaktbox, bezogen auf die Screengröße
+    if (window.matchMedia('(max-width: 991px)').matches){                                   //Screen kleiner als 991px                                               
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '300px',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '200px', height: '300px', opacity: '1'}, "slow"); 
+    }else{
+        document.getElementById("contacts").classList.add('disabled');
+        document.getElementById("box").style.visibility = "visible";
+        var box = $("box");
+            box.animate({
+            top: '10em',
+            width: '20%',
+            marginLeft: '38%',
+            height: '50%',
+            opacity: '0.5'  
+            });
+            box.animate({width: '20%', height: '500%', opacity: '1'}, "slow");
+        } 
+};
+
+    function outFunction(){                                                                 //Einklappen der Kontaktbox
+    document.getElementById("contacts").classList.remove('disabled');
+    $('box').removeAttr('style');
+}; 
+
+    </script>
+    
+</head>
+    <!-- font-size im .title je nach Zeilenanzahl der Überschrift anpassen ( eine Zeile 5vw, zwei Zeilen 3 vw) -->
+    <!--Positionierung des Textes bei .text je nach Zeilen der Überschrift ( bei einer Zeile Überschrift 18%, bei zwei Zeilen 16%) -->
+    <!-- https://work.smarchal.com/twbscolor/4.0.0/css/f0f8ff86accc7e7e7e7e7e7e1 -->
+    <!-- https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+<body>
+
+ <nav class="navbar navbar-expand-md rounded sticky-top">                                   <!--Navigationsbar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-label" style="color:#7e7e7e;" ><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></span>
+        </button>
+        
+    <box id="box"><ueb class=sm>Kontakt</ueb><button id="abc" class="Con" onclick="outFunction()">X</button><br><br><br><br> <!--Kontaktbox-->
+    
+    Yvonne & Lena<br>
+    28329 Bremen<br>
+    
+    blabla@web.de<br><br>
+    
+    </box>                                                                                                          <!--Kontaktbox Ende-->
+
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="Startseite.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="UeberUns.html">Über uns</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lena</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="Japan.html">Japan</a>
+            <a class="dropdown-item" href="Sizilien.html">Sizilien</a>
+            <a class="dropdown-item" href="Kapstadt.html">Kapstadt</a>
+          </div>
+        </li>           
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yvonne</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="Island.html">Island</a>
+                <a class="dropdown-item" href="Norwegen.html">Norwegen</a>
+                <a class="dropdown-item" href="Malediven.html">Malediven</a>
+          </div>
+        </li>       
+        <li class="nav-item">
+         <a class="nav-link" id="contacts" href="#" onclick="conFunction()">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>                                                                                <!--Navigationsbar Ende-->
+
+
+<div id=header>                                                                         <!-- Mittlerer weißer Streifen -->
+
+<div class=picture><img class=picture src="Bilder/Japan/Miyajima-Area.jpg" alt="Miyajima"></div>        <!--Titelbild -->
+<datum> 13.04.2018 von Lena</datum>                                                                     <!--Datum und Autor-->
+<div class=title>Mirihi - Eine der schönsten Inseln der Malediven</div>                               <!--Überschrift im Bild-->
+
+<div class=text><p class=mittig>Die Malediven sind das absolute Traumziel für Ruhesuchende und Honeymooner. Ich habe jahrelang davon geträumt, das glasklare Wasser, den weissen Strand und die Palmen erleben zu dürfen – und jahrelang scheiterte es an den Kosten. Die Malediven sind echt unglaublich teuer für Normalverdiener – zumindest alles ab 4 Sternen. Trotzdem – ich wollte mir diesen Traum unbedingt erfüllen.<br><br>
+Die Angst, dass auf der 300m-Insel Langeweile aufkommen könnte, ist absolut unbegründet. Natürlich sind die Malediven eine abgekapselte Traumwelt. Das kann für eingefleischte Globetrotter und Individualreisende ungewohnt, ja fast surreal sein. Aber gerade auch aktive Menschen sollten eine Reise auf die Malediven wagen. Dem Zauber kann sich kaum jemand entziehen! Im Gegenteil: die Malediven-Sehnsucht wird ein Leben lang nicht mehr zu stillen sein. <br><br>
+
+<ueb>Das perfekte Malediven Hotel wählen</ueb><br><br>
+
+Das perfekte Malediven-Resort zu finden, ist eine Herausforderung. Es gibt viele grandiose Top-Anlagen. Für mich kamen nur 5*-Sterne in Frage – wenn schon Malediven, dann das ganze Paket. Eine Enttäuschung wollte ich auf gar keinen Fall riskieren, denn es gibt grosse Qualitätsunterschiede.<br>
+Ganz wichtig: die Insel muss das echte, wahre Malediven-Feeling bieten. Die Bungalows sollten mit möglichst natürlichen Materialien gebaut sein und aussehen wie eine „Robinson-Insel“.<br> <br>
+Ausserdem wünschte mir ein schönes Haus-Riff zum Schnorcheln und keine grob-betonierten Mauern wegen Strand-Erosion. Bei der Hotelauswahl ist mir auch das Klientel wichtig: möglichst keine Chinesen oder Russen (gemein, gemein, ich weiss. Aber wenn ihr mal Chinesen in Aktion erlebt hat, während ihr euch entspannen wollten, dann könnt ihr mich verstehen…). Am besten bei den Reiseveranstaltern informieren, ob das Wunschhotel im asiatischen Markt Werbung macht.<br>
+Das Resort sollte ebenfalls nicht in der unmittelbaren Nähe einer Müllinsel liegen – die Rauch-Emissionen sind teilweise erheblich. Und optisch ist es auch kein Knaller, wenn man die Müllberge vom Strand aus sehen kann.<br><br>
+Nach dem Lesen von Tripadvisor, Blogs und dem Recherchieren in Foren kristallisierte sich das Mirihi heraus. Juppi, ich hatte meine Trauminsel gefunden.<br><br>
+
+<ueb>Reisezeit Malediven</ueb><br><br>
+
+Die Malediven sollten zwischen Dezember und April besucht werden. Klar, das ist die teuerste Saison, aber die Wahrscheinlichkeit für sonniges und trockenes Wetter ist während dieser Zeit am besten.  Zwischen Juni und Oktober ist die Monsun-Zeit. Könnt ihr euch vorstellen, ihr habt 3000-6000 Fr. für ein Woche (pro Person) bezahlt und es regnet andauernd? Riskiert das besser nicht…Aber es soll auch schon vorgekommen sein, dass mitten im Februar eine Schlechtwetterperiode eingetroffen ist. Die Malediven gehören zu den Tropen und dort ist bekanntlich immer mit kurzen Niederschlägen zu rechnen. Wir hatten Glück. Unsere Ferienwoche Ende Januar/Anfang Februar war einfach traumhaft.<br><br>
+
+<ueb>Hinkommen</ueb><br><br>
+
+Für mich kam nur der Direktflug Zürich-Male mit der Edelweiss-Air in Frage. Alle Umsteigevarianten über Dubai oder Abu Dhabi sind mir zu anstrengend und zeitraubend. Von Male gelangt man per Wasserflugzeug auf die Insel Mirihi im Süd Ari Atoll. Achtet auf die kultigen Barfuss-Piloten. Am Jetty hat uns der Manager – in Schweizerdeutsch – persönlich begrüsst, inklusive Welcome-Drink.<br><br>
+
+<ueb>Mirihi – meine Schweizer Insel Robinson</ueb>
+
+Mit dem Mirihi hatten wir einen echten Glücksgriff gelandet. Hauptsächlich Schweizer Klientel, einige Deutsche, ein etwas verlorener Italiener, keine Chinesen oder Russen. Das ist wirklich unglaublich angenehm, aber auch irgendwie skurril. Schweizer Kundenbetreuer, schweizer Manager, schweizer Gäste…ich fühlte mich wie auf der Schweizer Insel Robinson.<br>
+So kann man eventuelles Lästern vergessen-jeder versteht dich. Es gibt bestimmt lustige Momente mit den Schweizer Landsleuten, aber hauptsächlich killt es das Einsame-Insel-Feeling. Mir kam es schon fast vor, als hätte die Schweiz eine kleine Insel für privilegierte Bürger gepachtet…:)<br><br>
+
+<ueb>Bungalow-Wahl</ueb>
+
+Es ist immer Geschmacksache, ob eine Water-Villa oder eine Beach-Villa bevorzugt wird. Eine Nespresso-Maschine mit täglich 3 Kapseln, Klimaanlage und ein Outdoor-Badezimmer gehören bei beiden Kategorien dazu. Auf einen Fernseher wurde bewusst verzichtet – WLAN wird aber gratis zur Verfügung gestellt.<br><br>
+Für mich kam nur eine Beach-Villa in Frage: den wunderbaren Palmenstrand hat man quasi für sich alleine, inklusive privater Liegen (ihr werdet nie wieder in einem Strandhotel übernachten, wo um Liegen gekämpft werden muss). Die Privatsphäre ist in jedem Fall gegeben. Der Pflanzenbewuchs ist sehr dicht, daher werdet ihr immer genügend Schatten haben.<br><br>
+
+Eingefleischte Sonnenanbeter sind mit einer Water-Villa wohl besser bedient. Auch das „Weite-Meer-Feeling“ muss grandios sein. In der Hauptsaison Dezember bis März sind die Strand-Bungalows lange im Voraus ausgebucht. Man sollte sowieso mindestens 6 Monate vorher buchen.<br><br>
+
+<ueb>Die Insel Mirihi</ueb><br><br>
+Die Insel ist absolut nicht überladen – die Gäste verteilen sich auch bei voller Auslastung sehr gut! Keine Animation. An einem Abend gabs ein Open-Air Kino mit dem Film „What happens in Vegas“: klar lustiger Film, aber das Gekreische von Cameron Diaz war über die ganze Insel zu hören.<br><br>
+Sonderwünsche werden vom Customer-Care-Team problemlos erfüllt, Stilecht in Schweizerdeutsch.<br><br>
+Die Insel ist dicht bewuchert mit Palmen und Sträuchern, die sehr gut gepflegt werden. Morgens werden die Strandabschnitte vom Seegrass befreit. Das freundliche und zurückhaltende Personal tut wirklich alles, damit die Insel wie ein wahres Paradies strahlen kann. Ein grosses Lob.<br><br>
+Die Schuhe liessen wir während des ganzen Aufenthalts im Koffer. Wie schnell man sich doch ans Barfuss-Laufen gewöhnt und am liebsten nie wieder Schuhe anziehen möchte.<br><br>
+Wir genossen das Paradies in vollen Zügen – es fiel uns unglaublich schwer, nach 1 Woche wieder die Koffer zu packen und in die kalte Schweiz zu fliegen. Echt hart…<br><br>
+
+<ueb>Activities / Unternehmungen auf der Insel</ueb>
+Von Bekannten wurde ich oft gefragt: „wird es euch denn nicht langweilig auf dieser winzigen Insel“? Antwort: Nein <br>
+Gerade für Paare ist es ein wahres Romantik-Paradies. Vorausgesetzt, man kommt nicht mit aufgeladenen Stimmung auf die Insel <br><br>
+
+<num>To Do`s</num><br><br>
+
+Schnorcheln im einzigartigen Hausriff mit Weissspitzen-Riffhaien, Schildkröten und vielen bunten Fischen. Das Riff ist vom Strand aus schwimmend erreichbar. Auf die Gezeiten achten – während der Ebbe kommt man kaum ins Riff rein, da der Wasserstand zu tief ist. Die Hotel-Angestellten helfen gerne weiter, wenn man den Einstieg nicht findet. Oder einfach anderen Schnorchler nachschwimmen.<br><br>
+
+<num>1.</num>Auf dem Liegestuhl sonnen und lesen<br><br>
+<num>2.</num>Sunset-Cocktails schlürfen im Muraka<br><br>
+<num>3.</num>im kristallklaren Wasser baden und nicht mehr rauswollen<br><br>
+<num>4.</num>Schlemmen im Dhonveli<br><br>
+<num>5.</num>Bootsausflüge zu den Schnorchelgebieten im Süd-Ari Atoll – Schildkröten, Delfine und Haie sind keine Seltenheit (alles gesehen…:).<br><br>
+<num>6.</num>Das wahre Highlight ist aber das Schnorcheln mit Wal-Haien. Wir hatten das grosse Glück, 2 dieser gigantischen Tiere erleben zu dürfen. Bitte macht dies unbedingt, wenn ihr die Malediven besucht. Es ist ein einmaliges Erlebnis. Leider hatte unsere Mirihi-Gruppe das Pech, im gleichen Moment zum Walhai-Spot zu kommen wie die Gäste des benachbarten Conrad Rangali. Hier merkt man die Mentalitätsunterschiede verschiedener Nationen. Während die Schweizer Gäste ruhig und konzentriert neben den gewaltigen Tieren schwammen, paddelten, fuchtelteten und laferten die Italienischen Touris wild drauflos. Sehr ärgerlich und respektlos.<br><br>
+
+<ueb>Private Dining am Strand</ueb><br><br>
+
+Ein 4-Gänge Abendessen am Strand nur für zwei, mit privaten Koch und eigenem Servierer. WOW – das müsst ihr unbedingt auch machen. Einfach traumhaft schön. Ich denke nicht, dass man als Päärchen etwas romantischeres machen kann als das…wenn man sich denn nicht so exponiert fühlen würde. Der Strand wird natürlich nicht abgesperrt und die Gäste laufen hin und her und riskieren natürlich ein paar Blicke.<br><br>
+
+<div class=picture><img class=picture src="Bilder/Japan/kyoto-tokyo-to-kyoto-by-shinkansen-train-52732.jpg" alt="Shinkansen"></div><br>
+
+
+</p></div>                                                                                                      <!--Ende Text-->
+	
+</div>                                                                                                          <!-- Mittlerer weißer Streifen Ende -->
+
+<!-- http://travel-story.ch/2016/01/30/malediven-mirihi-island-resort/ -->
+</body>
+</html>
